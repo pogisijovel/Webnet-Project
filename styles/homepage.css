@@ -187,6 +187,7 @@ nav a:hover,
 .sponsor-container {
   margin-top: 10px;
   display: flex;
+  animation: scrollSponsors 30s linear infinite;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: thin;
@@ -196,9 +197,17 @@ nav a:hover,
 .sponsor-container::-webkit-scrollbar {
   width: 0;
 }
-
+@keyframes scrollSponsors {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .sponsor {
   width: auto;
+  margin-right: 20px;
   height: 100px;
   margin-right: 100px;
 }
@@ -455,7 +464,6 @@ nav a:hover,
   align-items: center; /* Center the content vertically */
   position: relative; /* Ensure z-index works */
   z-index: 0; /* Place the square behind the content */
-  
 }
 
 .peopleP {
@@ -601,25 +609,285 @@ ul {
   color: #000000;
 }
 
-/* Footer styles */
-.footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  margin-top: 100%;
+
+/* talent talks */
+
+.talent {
+  width: 543px;
+  height: 70px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.1 ;
+}
+
+.bato-container {
+  display: flex;
+  margin-left: 10px;
+}
+
+.bato {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 383.23px;
+  height: 237px;
+  border-radius: 7.35px;
+  opacity: 0.1;
+}
+
+.insights {
+  height: 23.35px;
+  padding: 3.68px 12.87px;
+  border-radius: 19.3px;
+  gap: 9.19px;
+  background-color: #548BAB;
+  border: none; 
+  color: white; 
+  font-size: 14px; 
+  cursor: pointer; 
+  margin-left: 50px;
+  margin-top: 5px;
+  opacity: 0.1;
+}
+
+.buttonContainers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.button-primary {
+  background-color: #548BAB;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+  opacity: calc(0.1);
+}
+
+button.button-primary:hover {
+  background-color: blue;
+}
+
+
+
+.posted {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #548BAB; 
+  margin-left: 39px;
+  padding: 5px 10px; 
+  opacity: 0.1;
+  border-radius: 5px; 
+}
+
+.what {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 47px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.1;
+}
+
+.whatThe {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 50px;
+  color: #548BAB;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.1;
+}
+
+.Q {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8F8F8F;
+  margin-left: 50px;
+  opacity: 0.1;
+}
+
+.read {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px 16px; 
+  color: #548BAB; 
+  background-color: transparent;
+  border: none; 
+  margin-left: 35px;
+  border-radius: 4px;
+  opacity: 0.1;
+  cursor: pointer; 
+}
+
+
+
+/* Featured */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.featured {
+  width: 278px;
+  height: 62px;
+}
+
+.sulatContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sulat {
+  width: 706px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center; /* Added */
+}
+
+.sponsor2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 1128.11px; 
+  height: 61px; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.sponsor2 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.named {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+  
+}
+
+/* OrangeSMile */
+.square3 {
+  width: 100%;
+  height: 464px;
+  background-color: #C9DFEE;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  margin-top: 200px;
+}
+
+.shesh{
+  margin-left: 70px;
+}
+.orangeSmile {
+  margin-top: 200px;
+}
+
+.Looking{
+  width: 586px;
+  height: 48px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.browse{
+  width: 212.77px;
+  height: 55.37px;
+  top: 153px;
+  padding: 17.51px, 78px, 17.51px, 78.12px;
+  border-radius: 36px;
+  gap: 13.47px;
+  color: #FFFFFF;
+  background-color: #548BAB;
+}
+
+.vacancy{
+  width: 212.77px;
+  height: 55.37px;
+  top: 153px;
+  padding: 17.51px, 78px, 17.51px, 78.12px;
+  border-radius: 36px;
+  gap: 13.47px;
+  color: #548BAB;
+  background-color: #FFFFFF;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20%;
+  display: flex;
+  align-items: flex-start;
+  
   justify-content: space-between;
 }
 
-.footer-logo {
-  text-align: left;
-  margin-bottom: 20px;
+.footerLogo {
+  width: 219.23px;
+  height: 81.49px;
+  margin-left: 50px;
+  margin-top: 10px; 
+}
+
+.glee{
+  margin-left: 50px;
+  width: 176px;
+  height: 48px;
+  top: 275px;
+  left: 112px;
+  color:#548BAB;
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: baseline;
 }
 
 .footer-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: baseline;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -640,11 +908,11 @@ ul {
   color: blue;
 }
 
+
 .footer-line {
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-  padding-top: 20px;
+  border-bottom: 1px solid #F5F5F5;
 }
+
 
 .social-icons {
   display: flex;
@@ -659,62 +927,21 @@ ul {
   cursor: pointer;
 }
 
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
-  .textMid {
-    width: 70%;
-    right: 5%;
-  }
-
-  .search-bar-container {
-    top: calc(50% + 150px);
-    right: 5%;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .image-container {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .text-container {
-    width: 100%;
-    padding: 0;
-  }
+.centered-text a {
+  color: black; 
+  text-decoration: none; 
+  margin-left: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  .textMid {
-    font-size: 32px;
-  }
-
-  .meetingHeading {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .meetingBody {
-    font-size: 14px;
-  }
-
-  .icon-buttons {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .icon-button {
-    margin: 5px 0;
-  }
-
-  .buttonss, .buttonsss {
-    width: 200px;
-    font-size: 14px;
-  }
+.centered-text a:hover {
+  color: gray; 
 }
 
+.bott {
+  display: flex;
+  justify-content: center; 
+}
+
+.bott img {
+  margin-top: 20px;
+}
