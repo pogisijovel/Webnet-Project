@@ -135,52 +135,99 @@ nav a:hover,
   justify-content: flex-end;
   align-items: center;
   height: 10vh;
-  margin-right: 10%;
+  margin-right: 0;
   margin-bottom: 50px;
   top: calc(50% + 150px);
-  right: 10%; 
+  right: 0px; 
   position: absolute; 
 }
+
+
 
 .search-bar {
   display: flex;
 }
 
-.role-selection-btn,
-.where,
-.search-btn {
-  padding: 12px 30px;
-  font-size: 16px;
+.role-selection-btn {
+  font-family: "Montserrat" sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px 16px;
   color: #333;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 100px 0 0 100px; 
+  background-color: #f0f0f0;
+  Width: 232px;
+  Height: 68px;
+}
+
+.role-selection-btn .subtext {
+  font-family: "Avenir Next" sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1C0500;
+  width: 90px;
+  height: 17px;
+  display: block;
+  margin-top: 3px;
+}
+
+
+
+.where {
+  font-family: "Montserrat" sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px 16px;
+  color: #333;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  width: 259px;
+  height: 68px;
+  
+}
+
+.where .subtext {
+  font-size: 12px;
+  color: #1C0500;
+  margin-top: 3px;
+}
+
+.where .arrow-down {
+  margin-left: 5px;
+}
+
+
+.search-btn {
+  width: 212.77px;
+  height: 68px;
+  padding: 16px 24px;
+  border-radius: 0px 100px 100px 0px;
+  border: 1px solid;
+  justify-content: space-between;
+  background-color: #3498db;
+  color: #fff;
   cursor: pointer;
 }
 
-.role-selection-btn {
-  background-color: #f0f0f0;
-  border: 2px solid #ddd;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.where {
-  background-color: #f0f0f0;
-  border: 2px solid #ddd;
-}
-
-.search-btn {
-  background-color: #3498db;
-  border: 2px solid #2980b9;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #fff;
-}
 
 /* Sponsors styles */
 .square {
   width: 100%;
   height: 30vh;
   margin-top: 40px;
-  overflow-x: auto;
+  overflow-x: hidden;
   background-color: #add8e6;
 }
 
@@ -188,7 +235,7 @@ nav a:hover,
   margin-top: 10px;
   display: flex;
   animation: scrollSponsors 30s linear infinite;
-  overflow-x: auto;
+  overflow: hidden;
   white-space: nowrap;
   scrollbar-width: thin;
   -ms-overflow-style: none;
@@ -196,6 +243,7 @@ nav a:hover,
 
 .sponsor-container::-webkit-scrollbar {
   width: 0;
+  overflow: hidden;
 }
 @keyframes scrollSponsors {
   0% {
@@ -359,9 +407,10 @@ nav a:hover,
 
 /* Image styles */
 .left-image {
-  width: auto;
-  max-width: 80%;
+  width: 600px;
+  height: 622.35px;
 }
+
 
 /* Text-container styles */
 .text-container {
@@ -458,12 +507,12 @@ nav a:hover,
 .square2 {
   width: 100%;
   height: 590px;
-  background-color: rgba(0, 0, 255, 0.3); /* Blue color with increased opacity */
-  display: flex; /* Ensure the inner content is displayed */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  position: relative; /* Ensure z-index works */
-  z-index: 0; /* Place the square behind the content */
+  background-color: rgba(0, 0, 255, 0.3); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+  z-index: 0; 
 }
 
 .peopleP {
@@ -474,8 +523,8 @@ nav a:hover,
   color: #F9F9F9;
   line-height: 37.5px;
   z-index: 1;
-  width: 735px; /* Set width to 735 pixels */
-  height: 304px; /* Set height to 304 pixels */
+  width: 735px; 
+  height: 304px; 
   left: 130px;
   border-right: 2px solid #fff;
 }
@@ -519,11 +568,28 @@ nav a:hover,
 
 /* Invisible Container */
 .containerNapud {
+  display: flex;
   margin-left: 50px; 
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
+.custom-icon-buttons {
+  display: flex;
+}
+
+.custom-icon-button {
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.invisible-container{
+  margin-top: 50px;
+}
 
 .custom-icon-buttons {
   display: flex;
@@ -549,10 +615,6 @@ nav a:hover,
   margin-left: 50px;
 }
 
-.containerNapud {
-  display: flex;
-  
-}
 
 .styledElement {
   width: 300px;
@@ -621,7 +683,7 @@ ul {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.1 ;
+  opacity: 0.7 ;
 }
 
 .bato-container {
@@ -635,7 +697,7 @@ ul {
   width: 383.23px;
   height: 237px;
   border-radius: 7.35px;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .insights {
@@ -650,7 +712,7 @@ ul {
   cursor: pointer; 
   margin-left: 50px;
   margin-top: 5px;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .buttonContainers {
@@ -669,7 +731,7 @@ button.button-primary {
   font-size: 18px;
   margin-top: 50px;
   cursor: pointer;
-  opacity: calc(0.1);
+  opacity: calc(0.5);
 }
 
 button.button-primary:hover {
@@ -688,7 +750,7 @@ button.button-primary:hover {
   color: #548BAB; 
   margin-left: 39px;
   padding: 5px 10px; 
-  opacity: 0.1;
+  opacity: 0.5;
   border-radius: 5px; 
 }
 
@@ -700,7 +762,7 @@ button.button-primary:hover {
   line-height: 27px;
   letter-spacing: 0px;
   text-align: left;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .whatThe {
@@ -712,7 +774,7 @@ button.button-primary:hover {
   line-height: 27px;
   letter-spacing: 0px;
   text-align: left;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .Q {
@@ -724,7 +786,7 @@ button.button-primary:hover {
   text-align: left;
   color: #8F8F8F;
   margin-left: 50px;
-  opacity: 0.1;
+  opacity: 0.5;
 }
 
 .read {
@@ -740,7 +802,7 @@ button.button-primary:hover {
   border: none; 
   margin-left: 35px;
   border-radius: 4px;
-  opacity: 0.1;
+  opacity: 0.5;
   cursor: pointer; 
 }
 
@@ -772,7 +834,7 @@ button.button-primary:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-align: center; /* Added */
+  text-align: center;
 }
 
 .sponsor2 {
@@ -781,6 +843,7 @@ button.button-primary:hover {
   align-items: center; 
   width: 1128.11px; 
   height: 61px; 
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto; 
 }
@@ -793,9 +856,10 @@ button.button-primary:hover {
 }
 
 .named {
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
-  
+  border-bottom: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* OrangeSMile */
@@ -832,6 +896,7 @@ button.button-primary:hover {
 .browse{
   width: 212.77px;
   height: 55.37px;
+  border: none;
   top: 153px;
   padding: 17.51px, 78px, 17.51px, 78.12px;
   border-radius: 36px;
@@ -844,6 +909,7 @@ button.button-primary:hover {
   width: 212.77px;
   height: 55.37px;
   top: 153px;
+  border: none;
   padding: 17.51px, 78px, 17.51px, 78.12px;
   border-radius: 36px;
   gap: 13.47px;
@@ -859,7 +925,6 @@ button.button-primary:hover {
   margin-top: 20%;
   display: flex;
   align-items: flex-start;
-  
   justify-content: space-between;
 }
 
@@ -887,8 +952,9 @@ button.button-primary:hover {
 
 .footer-links {
   display: flex;
-  justify-content: baseline;
   flex-wrap: wrap;
+  left: 0;
+  align-items: flex-start;
   margin-top: 20px;
 }
 

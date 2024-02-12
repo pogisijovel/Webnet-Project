@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
+    <title>Gleeson Recruitment Group - Making the World of Work a Happier Place</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,13 +36,20 @@
     <img class="image" src="pictures/laugh.png" alt="pic" class="left-image">
   </div>
   
-  <p class="textMid">Making the world of work a <one><span class="hapier">Happier place,<img class="curly-img" src="pictures/curly.png" alt="Curly Image"></span>one candidate at a time.</p>
+  <p class="textMid">
+    Making the world of work a <span class="happier">Happier place,</span>
+    <img class="curly-img" src="pictures/curly.png" alt="Curly Image">
+    <span class="candidates">one candidate at a time.</span>
+</p>
+
 
 
   <div class="search-bar-container">
     <form class="search-bar">
-        <button class="role-selection-btn">Role Selection</button>
-        <button class="where">Where?</button>
+        <button class="role-selection-btn">
+          Looking for new opportunities?<span class="subtext">Role</span>
+        </button>
+        <button class="where">Where? <br><span class="subtext">United Kingdom, London</span><span class="arrow-down">&#9660;</span></button>
         <button class="search-btn">Search</button>
     </form>
 </div>
@@ -155,6 +164,7 @@
 
   <!---------------------------------------------Latest Job  -------------------------------------------->
   <div class="invisible-container">
+    <h2 class="jobsLatest">Latest job</h2>
     <div class="custom-icon-buttons">
       <button class="custom-icon-button" id="scrollLeftButton">
         <i class="fas fa-arrow-left"></i>
@@ -163,10 +173,9 @@
         <i class="fas fa-arrow-right"></i>
       </button>
     </div>
-    <h2 class="jobsLatest">Latest job</h2>
     <div class="scroll-container">
-      <div class="containerNapud">
 
+      <div class="containerNapud">
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
           <p class="postedTitle">Data Scientist</p>
@@ -419,10 +428,19 @@ function easeInOut(t) {
   return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const containerNapud = document.querySelector(".containerNapud");
+  const scrollLeftButton = document.getElementById("scrollLeftButton");
+  const scrollRightButton = document.getElementById("scrollRightButton");
 
-// second buttons
+  scrollLeftButton.addEventListener("click", function() {
+    scrollDirection('left');
+  });
 
-
+  scrollRightButton.addEventListener("click", function() {
+    scrollDirection('right');
+  });
+});
 
       </script>
     </body>
