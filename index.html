@@ -2,61 +2,71 @@
 <html lang="en">
   
 <head>
-    <title>Gleeson Recruitment Group - Making the World of Work a Happier Place</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Gleeson Recruitment Group - Making the World of Work a Happier Place</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 
 <body>
 
 <!--------------------------------------------Nav Bar ------------------------------------------------------>
-  <nav>
-      <img class="glesson" src="pictures/glesson-logo.svg" alt="Gleeson Logo">
-      <a class="dropdown-btn" href="#">Job Seekers</a>
-      <a class="dropdown-btn" href="#">Employers</a>
-      <a class="dropdown-btn" href="#">Divisions</a>
-      <a class="dropdown-btn" href="#">Talent Talks</a>
-      <a class="dropdown-btn" href="#">Contact Us</a>
-      <div class="button-container">
-          <button class="register-btn">Register</button>
-          <button class="login-btn">Log in</button>
-      </div>
-  </nav>
+<nav>
+  <img class="glesson" src="pictures/glesson-logo.svg" alt="Gleeson Logo">
+  <div class="menu">
+    <a class="dropdown-btn" href="#">Job Seekers</a>
+    <a class="dropdown-btn" href="#">Employers</a>
+    <a class="dropdown-btn" href="#">Divisions</a>
+    <a class="dropdown-btn" href="#">Talent Talks</a>
+    <a class="dropdown-btn" href="#">Contact Us</a>
+  </div>
+  <div class="button-container">
+    <button class="register-btn">Register</button>
+    <button class="login-btn">Log in</button>
+    <div class="hamburger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+</nav>
+
   
 <!-------------  Making the world of work a Happier place,Curly Imageone candidate at a time.---------------->
-  <div class="img-container">
-    <img class="image" src="pictures/laugh.png" alt="pic" class="left-image">
+<div class="container">
+  <div class="search-bar-container">
+    <form class="search-bar">
+      <button class="role-selection-btn">Looking for new opportunities?<br><span class="subtext">Role</span></button>
+      <button class="where">Where?<br><span class="subtext">United Kingdom, London</span><span class="arrow-down">&#9660;</span></button>
+      <button class="search-btn">Search</button>
+    </form>
   </div>
   
+  
+    <img class="orange" src="pictures/orange.png" alt="Orange Image">
+ 
+
+  <div class="img-container">
+    <img class="image" src="pictures/laugh.png" alt="Image">
+  </div>
+
   <p class="textMid">
     Making the world of work a <span class="happier">Happier place,</span>
     <img class="curly-img" src="pictures/curly.png" alt="Curly Image">
     <span class="candidates">one candidate at a time.</span>
-</p>
-
-
-
-  <div class="search-bar-container">
-    <form class="search-bar">
-        <button class="role-selection-btn">
-          Looking for new opportunities?<span class="subtext">Role</span>
-        </button>
-        <button class="where">Where? <br><span class="subtext">United Kingdom, London</span><span class="arrow-down">&#9660;</span></button>
-        <button class="search-btn">Search</button>
-    </form>
+  </p>
 </div>
+
+
+
 
 <!--------------------------------------------- Square1 --------------------------------------------------->
 <div class="square">
-  <h3>Proud to work alongside</h3>
+  <h3 class="proud">Proud to work alongside</h3>
   <div class="sponsor-container">
     <img class="sponsor" src="pictures/central-coop.png" alt="pic">
     <img class="sponsor" src="pictures/homeserve.png" alt="pic">
@@ -84,6 +94,7 @@
       <h1>Our Divisions</h1>
       <p class="textBot">Our team is comprised of passionate, highly experienced consultants from just about every industry and sector, from accounting and finance to marketing and digital, HR, IT, and everything in between.</p>
       <button class="seeAll">See All Divisions</button>
+      <button class="learnMore">Learn More</button>
     </div>
   
     <div class="job" id="jobContainer">
