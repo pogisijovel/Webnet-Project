@@ -1,12 +1,13 @@
 /* Default styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #fff;
   overflow: auto;
+  padding: 0;
+  margin: 0;
   min-height: 100vh;
   text-align: left;
+  overflow-x: hidden;
 }
 
 
@@ -149,9 +150,6 @@ nav a img {
   margin-left: auto;
 }
 
-
-
-
 .search-bar-container {
   display: flex;
   justify-content: flex-end;
@@ -251,7 +249,14 @@ nav a img {
   background-color: #add8e6;
 }
 
+.sponsor {
+  width: 200px; 
+  height: 100px;
+  margin-right: 20px;
+}
+
 .sponsor-container {
+  width: fit-content;
   margin-top: 10px;
   display: flex;
   animation: scrollSponsors 30s linear infinite;
@@ -265,6 +270,7 @@ nav a img {
   width: 0;
   overflow: hidden;
 }
+
 @keyframes scrollSponsors {
   0% {
     transform: translateX(100%);
@@ -273,12 +279,7 @@ nav a img {
     transform: translateX(-100%);
   }
 }
-.sponsor {
-  width: auto;
-  margin-right: 20px;
-  height: 100px;
-  margin-right: 100px;
-}
+
 
 .sponsor:hover {
   opacity: 0.8;
@@ -460,6 +461,7 @@ nav a img {
   width: 50px; 
   padding: 20px; 
 }
+
 
 .meetingHeading {
   font-family: "Montserrat", sans-serif;
@@ -673,6 +675,9 @@ nav a img {
   box-shadow: 0px 10px 40px 0px #0000001A; 
 }
 
+.passion10{
+  display: none;
+}
 .posted10{
   margin-left: 11%;
   font-family: Inter;
@@ -796,9 +801,6 @@ button.button-primary {
 button.button-primary:hover {
   background-color: blue;
 }
-
-
-
 
 .what {
   font-family: "Montserrat", sans-serif;
@@ -1053,7 +1055,23 @@ button.button-primary:hover {
 
 .bott {
   display: flex;
-  justify-content: center; 
+  justify-content: space-between;
+}
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
+
+.mid {
+  margin: 0 auto;
 }
 
 .bott img {
@@ -1067,13 +1085,12 @@ button.button-primary:hover {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    overflow: auto;
+    overflow-x: hidden;
     min-height: 100vh;
     text-align: left;
-    max-width: 375px; 
+    /* max-width: 375px;  */
     margin: 0 auto; 
     box-sizing: border-box; 
-    overflow-x: hidden;
   }
 
   .glesson {
@@ -1616,6 +1633,11 @@ button.button-primary:hover {
       justify-content: flex-start;
       overflow-x: scroll;
       overflow-y: hidden;
+      height: 100px;
+    }
+
+    .sponsor2::-webkit-scrollbar {
+      width: 0;
     }
 
     .sudlanan {
@@ -1632,4 +1654,161 @@ button.button-primary:hover {
     .named{
       height: 300px;
     }
+
+/* Common styles for mobile */
+.square3 {
+  max-width: 100%;
+  height: auto;
+  background-color: #C9DFEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  /* padding: 20px; */
 }
+
+.orange {
+  display: none;
+  width: 337.9px;
+  display: flex;
+  margin-left: -85px;
+  margin-top: -165px; 
+}
+
+
+.passion10{
+  display: flex;
+  width: 343px;
+  height: 103.37px;
+}
+
+.passion{
+  display: none;
+  }
+.shesh {
+  margin-left: 0;
+}
+
+.orangeSmile {
+  margin-top: 20px;
+}
+
+.Looking {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.browse, .vacancy {
+  width: 100%;
+  max-width: 300px;
+  height: 55px;
+  border: none;
+  border-radius: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.browse {
+  background-color: #548BAB;
+}
+
+.vacancy {
+  color: #548BAB;
+  background-color: #FFFFFF;
+}
+
+  .footerLogo{
+    width: 219.23px;
+    height: 81.49px;
+    margin-top: -70px;
+    margin-left: 0;
+  }
+
+  .glee{
+    margin-left: 0;
+    width: 176px;
+    height: 48px;
+    top: 275px;
+    left: 112px;
+    color:#548BAB;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: baseline;
+  }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-column {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .centered-text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: auto;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .footer-line2{
+      border-top: 2px solid black;
+      width: 95%;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-line{
+      display: none;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .bott {
+      justify-content: space-between;
+    }
+    .bott1 {
+      margin-left: auto;
+      width: auto;
+      height: 50px;
+    }
+    .bott2 {
+      margin-right: auto;
+    }
+    .mid {
+      margin: 0 auto;
+    }
+    .bott img {
+      margin-top: 20px;
+    }
+  }
