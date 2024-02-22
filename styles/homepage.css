@@ -52,7 +52,10 @@ nav a img {
 
 .login-btn,
 .register-btn {
-  border-radius: 60px;
+  width: 160px;
+  height: 47px;
+  left: 464px;
+  border-radius: 50px;
   padding: 14px 20px;
   margin: 8px 16px;
   text-align: center;
@@ -61,6 +64,29 @@ nav a img {
   font-size: 16px;
   cursor: pointer;
 }
+
+.dropdown-btn {
+  position: relative;
+  padding-right: 20px; /* Add padding to make space for the arrow */
+}
+
+.dropdown-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%) rotate(45deg); /* Rotate the arrow to point right by default */
+  border: solid #333;
+  border-width: 2px 2px 0 0; /* Create a triangle shape for the arrow */
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s ease; /* Add a transition for smooth animation */
+}
+
+.dropdown-btn:hover::after {
+  transform: translateY(-50%) rotate(135deg); /* Rotate the arrow to point downwards on hover */
+}
+
 
 .login-btn {
   background-color: white;
@@ -164,6 +190,13 @@ nav a img {
 
 .search-bar {
   display: flex;
+}
+
+.container10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .role-selection-btn {
@@ -1093,11 +1126,17 @@ button.button-primary:hover {
     box-sizing: border-box; 
   }
 
+  html{
+    overflow-x: hidden;
+  }
   .glesson {
     width: 125.55px;
     height: 46.67px;
   }
 
+  nav{
+    margin-bottom: 10%;
+  }
   nav a,
   .dropdown-btn {
     display: none; 
@@ -1143,14 +1182,46 @@ button.button-primary:hover {
     display: none;
   }
 
-  .underOrange{
+  .search-bar-container {
     display: flex;
-    width: 342px;
-    height: 144px;
-    margin-top: 80%;
-    margin-left: 15px;
+    top: 35%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: auto;
+    }
+    
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin as needed */
   }
-
+  
+  .role-selection-btn,
+  .where,
+  .search-btn {
+    width: 343px;
+    height: 68px;
+    padding: 8px 24px;
+    border-radius: 100px;
+    margin-top: 20px; /* Change the margin as needed */
+  }
+  
+  .where {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  
+  .subtext {
+    font-size: 14px;
+  }
+  
+  .arrow-down {
+    margin-left: 5px;
+  }
+  
   .image {
     margin-top: auto;
     width: 370px;
@@ -1159,36 +1230,12 @@ button.button-primary:hover {
     left: 0;
   }
 
-  .search-bar-container {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .role-selection-btn,
-  .where,
-  .search-btn {
-    width: 343px;
-    height: 68px;
-    padding: 8px 24px;
-    border-radius: 100px;
-    gap: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .role-selection-btn {
-    top: 5%;
-  }
-
-  .where {
-    top: 150%;
-  }
-
-  .search-btn {
-    top: 300%;
+  .underOrange{
+    display: flex;
+    width: 342px;
+    height: 144px;
+    margin-top: 80%;
+    margin-left: 15px;
   }
 
   .square {
@@ -1245,6 +1292,7 @@ button.button-primary:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .learnMore {
