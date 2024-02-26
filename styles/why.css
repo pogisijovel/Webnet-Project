@@ -532,6 +532,7 @@ margin-top: 20px;
 
 .job-item:hover .logo {
 opacity: 0.8;
+background-color: lightblue;
 }
 
 
@@ -819,10 +820,9 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: -5%;
-  padding-top: 20px;
   grid-template-columns: repeat(3, 408px);
   justify-content: center;
-  align-items: center; /* Added to center the container vertically */
+  align-items: center; 
   width: 1440px;
   height: 647px;
   padding: 24px;
