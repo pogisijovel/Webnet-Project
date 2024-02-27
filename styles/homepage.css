@@ -10,20 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Navigation styles */
 .glesson {
   width: 150px; 
   height: auto; 
   top: 15px;
   left: 0.45px;
-}
-
-.dropdown{
-  background-color: white;
-  border-right: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 nav {
@@ -35,13 +27,11 @@ nav {
   justify-content: space-around;
 }
 
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 li {
   display: inline-block;
@@ -49,11 +39,9 @@ li {
  
 }
 
-
 .dropdown ul li a {
   display: block;
 }
-
 
 ul li ul.dropdown {
   position: absolute;
@@ -64,16 +52,13 @@ ul li ul.dropdown {
   left: 0;
 }
 
-
 ul li:hover ul.dropdown {
   display: block;
 }
 
-
 ul li ul.dropdown li {
   display: block;
 }
-
 
 .dropdown-btn {
   font-family: 'Montserrat';
@@ -83,6 +68,16 @@ ul li ul.dropdown li {
   color: rgba(31, 53, 61, 1);
 }
 
+.dropdown{
+  background-color: white;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown ul li a {
+  text-align: left;
+}
 
 nav a,
 .dropdown-btn {
@@ -94,19 +89,15 @@ nav a,
   text-decoration: none;
 }
 
-
 nav a img {
   vertical-align: middle;
   margin-right: 8px;
 }
 
-
 nav a:hover,
 .dropdown-btn:hover {
-  background-color: #ddd;
   color: black;
 }
-
 
 .login-btn {
   border-radius: 60px;
@@ -124,7 +115,6 @@ nav a:hover,
   height: 47px;
 }
 
-
 .register-btn {
   border-radius: 60px;
   background-color: #548bab;
@@ -141,6 +131,7 @@ nav a:hover,
   width: 160px;
   height: 47px;
 }
+
 .hamburger-menu {
   display: none; 
   flex-direction: column;
@@ -158,11 +149,7 @@ nav a:hover,
   border-radius: 5px;
 }
 
-
-
 /* Main content styles */
-
-
 .textMid {
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -179,8 +166,7 @@ nav a:hover,
   border-bottom: 3px solid transparent;
 }
 
-
-.textMid span.hapier {
+ambu.textMid span.hapier {
   position: relative;
   display: inline-block; 
   vertical-align: middle; 
@@ -680,7 +666,6 @@ nav a:hover,
   margin-left: 50px; 
   white-space: nowrap;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .custom-icon-buttons {
@@ -726,14 +711,12 @@ nav a:hover,
 
 .styledElement {
   width: 300px;
-  height: 367px;
   padding: 20px 30px;
   border-radius: 8px;
   gap: 4px;
-  background-color: white; 
-  border: 2px solid #E5E5E5;
+  border: 1px solid #E5E5E5;
   margin-right: 20px;
-  box-shadow: 0px 10px 40px 0px #0000001A; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .passion10{
@@ -797,9 +780,7 @@ ul {
   color: #000000;
 }
 
-
 /* talent talks */
-
 .talent {
   width: 543px;
   height: 70px;
@@ -1190,22 +1171,26 @@ button.button-primary:hover {
     margin-right: auto; 
   }
 
-  .hamburger-menu {
+  .button-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    margin-left: 5px;
   }
-
+  
+  .hamburger-menu {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
   .line {
-    width: 100%;
+    width: 30%;
     height: 3px;
     background-color: black;
     border-radius: 5px;
     background-color: #548BAB;  
   }
+  
 
   .textMid{
     display: none;
