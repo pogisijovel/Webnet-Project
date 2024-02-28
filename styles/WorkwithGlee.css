@@ -1,0 +1,997 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+  overflow-x: hidden;
+}
+
+
+.glesson {
+  width: 150px; 
+  height: auto; 
+  top: 15px;
+  left: 0.45px;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.dropdown ul li a {
+  display: block;
+}
+
+
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  top: calc(100% + 2px);
+  padding: 10px;
+  left: 0;
+}
+
+.dropdown{
+  background-color: white;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+.dropdown-btn {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(31, 53, 61, 1);
+}
+
+
+nav a,
+.dropdown-btn {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+nav a img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
+nav a:hover,
+.dropdown-btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.btnLR{
+  margin-top: 20px;
+}
+
+.login-btn {
+  border-radius: 60px;
+  background-color: white;
+  color: #548bab;
+  border: 1px solid #548bab;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  height: 47px;
+}
+
+
+.register-btn {
+  border-radius: 60px;
+  background-color: #548bab;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 160px;
+  height: 47px;
+}
+
+
+/* -----blue background-------- */
+
+.blueBackground {
+  background-color: #548BAB;
+  width: 100%;
+  height: 364px;
+  display: flex;
+  z-index: 1;
+}
+
+.blueBackground h1{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  margin-left: 1%;
+  font-size: 48px;
+  line-height: 64.8px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+}
+
+.blueBackground p{
+  position: relative;
+  width: 40%;
+  top: 43%;
+  left: 10%;
+  margin-left: 1%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+/* ----------------------------- */
+
+  /* --------workwithGlee Video-------------- */
+
+  .gleeVideo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .WWG.Video {
+    text-align: center;
+    margin-top: 96px; 
+  }
+  
+  .WWG.Video h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    margin: 0; 
+  }
+  
+  .WWG.Video p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 0.5cm;
+    width: 800px;
+    height: 72px;
+    color: #8F8F8F;
+    
+    
+  }
+  
+
+  .GleesonRecruitment {
+    position: absolute;
+    top: 729px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .Vector1 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 451px;
+    margin-top: 13cm;
+}
+
+
+
+  .ButtonB {
+    display: flex;
+    padding-top: 35%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+  .seeMore {
+  border-radius: 50px;
+  background-color: #548bab;
+  color: white;
+  border: 1px solid #548bab;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 10%;
+  margin-top: 8%;
+  }
+
+  /* ------------------------------ */
+
+  /* gleeson office tour */
+
+  .tour {
+    padding-top: 12%;
+  }
+  
+  .gleesonTour {
+    display: flex; /* Display children inline */
+    align-items: center; /* Center vertically */
+  }
+  
+  .officeTour {
+    position: relative;
+    width: 30%;
+    height: 30%; /* Adjust height to match image */
+    margin-right: 20px; /* Adjust as needed */
+    margin-left: 10%;
+  }
+  
+  .pauseIcon {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: 23.5%;
+    margin-right: 50px; /* Adjust as needed */
+  
+  }
+  
+  .textTour {
+    margin-left: 5%;
+    margin-right: 12%;
+    width: 50%;
+    gap: 49px;
+  }
+
+  .textTour h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .textTour p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+  }
+  
+  /* ----------------------- */
+
+  /* new starter */
+
+  .newStarter {
+    display: flex; /* Display children inline */
+    align-items: center; /* Center vertically */
+  }
+  
+  .officeTour {
+    position: relative;
+    width: 30%;
+    height: 30%; /* Adjust height to match image */
+    margin-right: 20px; /* Adjust as needed */
+    margin-left: 10%;
+  }
+  
+  .pauseIcon {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: 23.5%;
+    margin-right: 50px; /* Adjust as needed */
+  
+  }
+  
+  .textTour {
+    margin-left: 5%;
+    margin-right: 12%;
+    width: 50%;
+    gap: 49px;
+  }
+
+  .textTour h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .textTour p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+  }
+
+
+  /* -------------------------- */
+
+  /* best company */
+
+  .bestCompany {
+    display: flex; /* Display children inline */
+    align-items: center; /* Center vertically */
+  }
+  
+  .officeTour {
+    position: relative;
+    width: 30%;
+    height: 30%; /* Adjust height to match image */
+    margin-right: 20px; /* Adjust as needed */
+    margin-left: 10%;
+  }
+  
+  .pauseIcon {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: 23.5%;
+    margin-right: 50px; /* Adjust as needed */
+  
+  }
+  
+  .textTour {
+    margin-left: 5%;
+    margin-right: 12%;
+    width: 50%;
+    gap: 49px;
+  }
+
+  .textTour h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .textTour p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+  }
+
+  /* ---------------------- */
+
+  /* london office */
+
+  .londonLaunch {
+    display: flex; /* Display children inline */
+    align-items: center; /* Center vertically */
+  }
+  
+  .officeTour {
+    position: relative;
+    width: 30%;
+    height: 30%; /* Adjust height to match image */
+    margin-right: 20px; /* Adjust as needed */
+    margin-left: 10%;
+  }
+  
+  .pauseIcon {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: 23.5%;
+    margin-right: 50px; /* Adjust as needed */
+  
+  }
+  
+  .textTour {
+    margin-left: 5%;
+    margin-right: 12%;
+    width: 50%;
+    gap: 49px;
+  }
+
+  .textTour h1 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .textTour p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+  }
+
+
+  /* --------------------- */
+
+  /* our values */
+
+  .values {
+    padding: 30px;
+  }
+
+
+  .values_tag {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight:700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  
+  .our_valuesContainer {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FBFBFB;
+  }
+  
+  .values1 p, 
+  .values2 p,
+  .values3 p,
+  .values4 p,
+  .values5 p,
+  .values6 p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5C5C5C;
+  }
+
+  .values-info h3 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .values1,
+  .values2,
+  .values3,
+  .values4,
+  .values5,
+  .values6 {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: calc(33% - 16px);
+  }
+  
+  .container1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .values {
+    padding: 96px, 112px, 96px, 112px;
+    margin-top: 15px;
+    
+  }
+
+  /* ---------------------------------- */
+
+  /* our events */
+
+  .ourEvents{
+    margin: 0;
+    padding: 0;
+  }
+
+  .events {
+    text-align: center;
+    margin-top: 96px; 
+  }
+  
+  .events h1 {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    margin: 0; 
+  }
+
+  .events p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 0.5cm;
+    width: 800px;
+    height: 72px;
+    color: #8F8F8F; 
+  }
+
+  .ytbutton {
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ourYoutube {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  border-radius: 50px;
+  background-color: #548bab;
+  color: white;
+  border: 1px solid #548bab;
+  padding: 14px 20px;
+  margin: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  width: 12%;
+  }
+
+  .youtubevids {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    gap: 83px;
+  }
+  
+  .ytvids {
+    padding-top: 3%;
+    display: flex; /* Allow flex behavior for the images */
+    gap: 83px;
+  }
+  
+  .ytvids img {
+    width: 500px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+
+  .buttonsLR {
+    padding-top: 3%;
+  }
+  
+  /* ------------------------------ */
+
+  /* see what */
+
+  .seewhatHead {
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+  }
+  
+  .seeWhatTags {
+    align-items: center;
+    width: 250px;
+    height: 144px;
+    margin-left: 10%;
+  }
+  
+  .seeWhatTags h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .seeWhatTags p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8F8F8F;
+  }
+  
+  .seeWhatPics {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 12%;
+    width: 250px; /* Set the same width as .seeWhatTags */
+    height: 144px; /* Set the same height as .seeWhatTags */
+    max-width: 100%;
+    gap: 49px;
+  }
+
+  .socialMedia {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36.8px;
+    /* align-items: center; */
+    gap: 28px;
+  }
+  
+  .socialMedia img {
+    margin-right: 10px; /* Adjust the gap between icons */
+  }
+
+  .seeWhatHeadLR {
+    position: relative;
+    padding-top: 15%;
+    margin-left: 80%;
+  }
+
+
+  /* ---------------------------- */
+
+  /* jobs at gleeson */
+
+  /* .containerNapud {
+    display: flex;
+    margin-left: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 3%;
+  } */
+
+  .containerNapud {
+    display: flex;
+    margin-left: 50px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-top: 3%;
+    height: 367px; /* Adjust the height value as needed */
+}
+
+  
+.styledElement {
+  margin-right: 15px; /* Margin on the right side */
+  margin-left: 20px; /* Margin on the left side */
+  padding: 20px 30px 20px 30px; /* Padding shorthand */
+  /* border: px solid #ccc; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: -1;
+  width: 300px;
+  height: 344px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+
+  .scroll-container {
+    height: auto;
+  }
+   
+  .bulletList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bulletList {
+   width: 240px;
+   height: 94px;
+   gap: 5px;
+  }
+
+  .bullet1 {
+    width: 241px;
+    height: 42px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+   
+  .bulletList li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+
+  .bullet {
+    display: grid;
+    width: 241px;
+    height: 21px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+   
+  .bulletList li:before {
+    content: '\2022';
+    color: black;
+    width: 8px;
+    height: 21px;
+    font-size: 14px;
+    font-family: 'Inter';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+  }
+
+  .bulletList .bullet1::before {
+    margin-top: -11px; /* Adjust the position of the bullet for the specific list item */
+  }
+
+  .posted {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 12.1px;
+    color: #8C8C8C;
+    width: 143px;
+    height: 21px;
+  }
+
+  .postedTitle {
+    width: 147px;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .posted1 {
+    width: 234px;
+    height: 62px;
+    gap: 7px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15.4px;
+    color: #548BAB;
+  }
+  
+  
+  .custom-icon-button {
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .invisible-container{
+    margin-top: 50px;
+  }
+  
+  .custom-icon-buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  
+  .custom-icon-button {
+    background-color: #C9DFEE;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .job-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+  }
+  
+  .jobsLatest{
+    margin-left: 5%;
+  }
+  
+  .learn{
+    margin-top: 10px;
+    width: 40%;
+  }
+
+  .learnMore {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat';
+    display: flex;
+    margin-bottom: -10px; /* Adjust the margin as needed */
+    margin-top: 29px;
+  }
+  
+  /* ---------------------- */
+
+  /* footer */
+
+  .footer {
+    background-color:#FBFBFB;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-start;
+   
+    justify-content: space-between;
+  }
+   
+   
+  .footerLogo {
+    width: 219.23px;
+    height: 81.49px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+   
+   
+  .glee{
+    margin-left: 50px;
+    width: 176px;
+    height: 48px;
+    top: 275px;
+    left: 112px;
+    color:#548BAB;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: baseline;
+  }
+   
+   
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30%;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+   
+   
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+  }
+   
+   
+  .footer-column a {
+    display: block;
+    color: rgba(89, 89, 89, 1);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .footer-column h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23.5px;
+  }
+   
+   
+  .footer-column a:hover {
+    color: blue;
+  }
+   
+   
+  .footer-line {
+    border-bottom: 1px solid #E5E7EB;
+    margin-top: 3%;
+  }
+   
+   
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 9%;
+  }
+   
+   
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin:  5px;
+    cursor: pointer;
+  }
+   
+   
+  .centered-text a {
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+   
+   
+  .centered-text a:hover {
+    color: gray;
+  }
+   
+   
+  .bott {
+    display: flex;
+    justify-content: center;
+  }
+   
+   
+  .bott img {
+    margin-top: 20px;
+  }
+
+  /* ----------------------- */
