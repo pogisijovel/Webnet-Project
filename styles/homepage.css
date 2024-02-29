@@ -151,8 +151,10 @@ nav a:hover,
 
 /* Main content styles */
 .textMid {
-  display: block;
-  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Montserrat sans-serif;
   font-weight: 800; 
   width: 40%;
   margin: 0;
@@ -166,17 +168,19 @@ nav a:hover,
   border-bottom: 3px solid transparent;
 }
 
-ambu.textMid span.hapier {
+.happier {
   position: relative;
-  display: inline-block; 
-  vertical-align: middle; 
-  margin-right: 5px; 
 }
 
-.textMid span.hapier img.curly-img {
-  height: 18px; 
-  width: 284px; 
+.happier img {
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5px;
 }
+
 
 .underOrange{
   display: none;
@@ -190,31 +194,33 @@ ambu.textMid span.hapier {
   margin-left: auto;
 }
 
-.search-bar-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 10vh;
-  margin-right: 0;
-  margin-bottom: 50px;
-  top: calc(50% + 150px);
-  right: 0px; 
-  position: absolute; 
-}
+  .search-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    margin-right: 0;
+    margin-bottom: 50px;
+    top: calc(50% + 150px);
+    right: 0px; 
+    position: absolute; 
+  }
 
 .search-bar {
   display: flex;
 }
 
-.container10 {
+.container100 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 10%;
+  width: 100%;
 }
 
 .role-selection-btn {
-  font-family: "Montserrat" sans-serif;
+  font-family: Montserrat  sans-serif;
   font-size: 11px;
   font-weight: 600;
   line-height: 14px;
@@ -231,7 +237,7 @@ ambu.textMid span.hapier {
 }
 
 .role-selection-btn .subtext {
-  font-family: "Avenir Next" sans-serif;
+  font-family: Avenir Next sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -245,7 +251,7 @@ ambu.textMid span.hapier {
 }
 
 .where {
-  font-family: "Montserrat" sans-serif;
+  font-family: Montserrat sans-serif;
   font-size: 11px;
   font-weight: 600;
   line-height: 14px;
@@ -352,7 +358,7 @@ ambu.textMid span.hapier {
 }
 
 .heading{
-  font-family: "Montserrat" sans-serif;
+  font-family: Montserrat sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -428,7 +434,7 @@ ambu.textMid span.hapier {
 }
 
 .description {
-  font-family: "Inter" sans-serif;
+  font-family: Inter sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -494,8 +500,9 @@ ambu.textMid span.hapier {
 
 /* Image styles */
 .image {
-  width: 600px;
-  height: 622.35px;
+  width: 500px;
+  height: 500px;
+  margin-top: -100px;
 }
 
 .purplePic{
@@ -511,14 +518,14 @@ ambu.textMid span.hapier {
 
 
 .meetingHeading {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat sans-serif;
   font-weight: 700; 
   line-height: 48px;
   font-size: 36px; 
 }
 
 .meetingBody {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   color: #676767;
 }
 
@@ -580,7 +587,7 @@ ambu.textMid span.hapier {
 
 /* Awards styles */
 .awardsR {
-  font-family: "Open Sans" sans-serif;
+  font-family: Open Sans sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -608,7 +615,7 @@ ambu.textMid span.hapier {
 
 .peopleP {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat sans-serif;
   font-weight: 500;
   font-size: 25px;
   color: #F9F9F9;
@@ -621,7 +628,7 @@ ambu.textMid span.hapier {
 }
 
 .peopleH {
-  font-family: "Montserrat";
+  font-family: Montserrat sans-serif;
   font-size: 44px;
   font-weight: 700;
   line-height: 53px;
@@ -639,7 +646,7 @@ ambu.textMid span.hapier {
 }
 
 .klase {
-  font-family: "Montserrat";
+  font-family: Montserrat sans-serif;
   font-size: 23px; 
   font-weight: 500; 
   line-height: 28px; 
@@ -689,9 +696,8 @@ ambu.textMid span.hapier {
   align-items: flex-end; 
   justify-content: flex-end; 
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 300px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 .custom-icon-button {
@@ -735,7 +741,7 @@ ambu.textMid span.hapier {
 }
 
 .posted{
-  font-family: Inter;
+  font-family: Inter sans-serif;
   font-size: 11px;
   font-weight: 700;
   line-height: 12px;
@@ -746,7 +752,7 @@ ambu.textMid span.hapier {
 }
 
 .postedTitle{
-  font-family: "Montserrat";
+  font-family: Montserrat sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -756,7 +762,7 @@ ambu.textMid span.hapier {
 }
 
 .posted1 {
-  font-family: "Montserrat";
+  font-family: Montserrat sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
@@ -771,7 +777,7 @@ ul {
 }
 
 .bullet {
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
   display: grid;
   font-weight: 400;
@@ -846,7 +852,7 @@ button.button-primary:hover {
 }
 
 .what {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-left: 47px;
@@ -857,7 +863,7 @@ button.button-primary:hover {
 }
 
 .whatThe {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-left: 50px;
@@ -869,7 +875,7 @@ button.button-primary:hover {
 }
 
 .Q {
-  font-family: "Inter", sans-serif;
+  font-family: Inter sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -881,7 +887,7 @@ button.button-primary:hover {
 }
 
 .read {
-  font-family: "Inter", sans-serif;
+  font-family: Inter sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -920,7 +926,7 @@ button.button-primary:hover {
 .sulat {
   width: 706px;
   height: 48px;
-  font-family: "Inter", sans-serif;
+  font-family: Inter sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -975,7 +981,7 @@ button.button-primary:hover {
 .Looking{
   width: 586px;
   height: 48px;
-  font-family: "Inter";
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1032,7 +1038,7 @@ button.button-primary:hover {
   top: 275px;
   left: 112px;
   color:#548BAB;
-  font-family: "Montserrat";
+  font-family: Montserrat sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 48px;
@@ -1198,12 +1204,15 @@ button.button-primary:hover {
 
   .search-bar-container {
     display: flex;
-    top: 35%;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    top: auto;
-    }
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+  
     
   .search-bar {
     display: flex;
@@ -1481,24 +1490,37 @@ button.button-primary:hover {
 
   .square2 {
     position: relative;
+    width: 100%;
   }
 
-  .peopleP {
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #F9F9F9;
-    line-height: 1.5;
-    z-index: 1;
-    width: 90%;
-    max-width: 343px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+  .container100 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+}
+.peopleP {
+  display: flex;
+  position: absolute; /* Change to absolute */
+  font-family: Montserrat sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #F9F9F9;
+  line-height: 1.5;
+  z-index: 1;
+  width: 90%;
+  max-width: 343px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 0;
+  left: 10px; /* Adjust the value as needed */
+}
+
+
+  
 
   .peopleH{
     font-family: Montserrat sans-serif;
@@ -1588,16 +1610,12 @@ button.button-primary:hover {
 
   .styledElement {
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: flex-start; 
     justify-content: center;
-    margin-top: 20px;
     width: 100%;
-    margin-left: -50px;
     overflow: auto;
     padding-left: 20px; 
-    margin: 20px;
   }
 
   .jobsLatest {
@@ -1793,7 +1811,7 @@ button.button-primary:hover {
     top: 275px;
     left: 112px;
     color:#548BAB;
-    font-family: "Montserrat";
+    font-family: Montserrat sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 48px;
