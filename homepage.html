@@ -188,18 +188,22 @@
  <!---------------------------------------------- Square 2 ----------------------------------------------->
  <div>
   <h1 class="peoplesay">What people say about us</h1>
-  <div class="square2">
-    <p class="peopleP"><span><img src="pictures/speech.png" alt=""></span>Gleeson were extremely honest about all aspects of the jobs and the expectations of me. When I had an issue during the process, they worked with the employer to come to a middle ground which suited both of us. Easily the best recruitment group I’ve dealt with in my IT career so far. <br><br>I would recommend Gleeson any day of the week!<span><img src="pictures/speech.png" alt=""></span></p>
-    <h3 class="peopleH">IT Operations <br>Manager</h3>
-    <p class="klase">Drayton Manor</p>
-    <img src="pictures/leftA.png" alt="pic" class="leftA">
-    <img src="pictures/rightA.png" alt="pic" class="rightA">
-  </div>
-  <div class="pagination">
-    <div class="circle active"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
+    <div class="square2">
+      <img src="pictures/leftA.png" alt="pic" class="leftA">
+        
+          <p class="peopleP"><span><img src="pictures/speech.png" alt=""></span>Gleeson were extremely honest about all aspects of the jobs and the expectations of me. When I had an issue during the process, they worked with the employer to come to a middle ground which suited both of us. Easily the best recruitment group I’ve dealt with in my IT career so far. <br><br>I would recommend Gleeson any day of the week!<span><img src="pictures/speech.png" alt=""></span></p>
+            <h3 class="peopleH">IT Operations <br>Manager</h3>
+            <p class="klase">Drayton Manor</p>
+        
+      <img src="pictures/rightA.png" alt="pic" class="rightA">
+    </div>
+
+    <div class="pagination">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
 </div>
   <!---------------------------------------------Latest Job  -------------------------------------------->
   <div class="invisible-container">
@@ -280,9 +284,9 @@
           <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
           <img src="pictures/learn.png" alt="pic" class="learn">
         </div>
@@ -378,7 +382,6 @@
   </div>
 </div>
 
-
 <!----------------------------------------------- Footer ------------------------------------------------->
 <div class="footer">
       <div class="footer-logo">
@@ -435,7 +438,6 @@
     <img src="pictures/bott2.png" class="bott2">
   </div>
 
-
   <script>
 function scrollDirection(direction) {
   const jobContainer = document.getElementById('jobContainer');
@@ -485,6 +487,31 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+const scrollLeftButton = document.getElementById('scrollLeftButton');
+    const scrollRightButton = document.getElementById('scrollRightButton');
+    const containerNapud = document.querySelector('.containerNapud');
+
+    let scrollAmount = 0;
+
+    scrollRightButton.addEventListener('click', () => {
+      scrollAmount += 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    scrollLeftButton.addEventListener('click', () => {
+      scrollAmount -= 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
       </script>
+
     </body>
 </html>
