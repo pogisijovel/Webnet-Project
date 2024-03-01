@@ -552,17 +552,6 @@ line-height: 24px;
 }
 
 
-.job {
-width: 100%;
-height: 300px;
-overflow: hidden;
-white-space: nowrap;
-display: flex;
-position: inherit;
-margin-top: 20px;
-}
-
-
 .job-item:hover .logo {
 opacity: 0.8;
 background-color: lightblue;
@@ -570,11 +559,30 @@ background-color: lightblue;
 
 
 #jobContainer {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-height: 500px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  justify-content: space-between;
+  height: 500px;
 }
+
+.job {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  white-space: nowrap; /* Set to nowrap */
+  display: flex;
+  position: inherit;
+  margin-top: 20px;
+}
+
+.logo {
+  max-width: 100%;
+  margin: 0;  
+  width: 227px;
+  height: 208px;
+  border-radius: 16px;
+  }
 
 
 .job-item {
@@ -585,13 +593,7 @@ border-radius: 16px;
 }
 
 
-.logo {
-max-width: 100%;
-margin: 0;  
-width: 227px;
-height: 208px;
-border-radius: 16px;
-}
+
 
 
 .description:hover {

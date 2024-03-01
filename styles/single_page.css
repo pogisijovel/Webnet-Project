@@ -126,7 +126,7 @@ nav a:hover,
   background-color: #548bab;
   color: white;
   border: none;
-  padding: 14px 20px;
+  padding: 14px 20px; 
   margin: 8px 16px;
   text-align: center;
   text-decoration: none;
@@ -253,7 +253,7 @@ nav a:hover,
   align-items: flex-start;
   max-width: 100%;
   height: 536px;
-  margin: 101px auto 0;
+  margin: 0 auto; /* Updated margin to 0 on top */
   padding: 20px;
   background: #C9DFEE;
   font-size: 18px;
@@ -262,6 +262,7 @@ nav a:hover,
   letter-spacing: 0px;
   text-align: left;
 }
+
 
 
 .payaman{
@@ -319,10 +320,39 @@ nav a:hover,
 }
 
 /*4th*/
-.buttons-container1{
+.buttons-container1 {
   display: flex;
-  margin-left:  -50px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll1 8s linear infinite alternate;
 }
+
+@keyframes scroll1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.buttons-container2 {
+  display: flex;
+  overflow: hidden;
+  white-space: wrap;
+  animation: scroll2 8s linear infinite alternate;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 .category-button {
   background-color: #548BAB;
   color: white;
@@ -378,10 +408,7 @@ nav a:hover,
   background-color: #548BAB;
 }
 /* second button */
-.buttons-container2 {
-  white-space: nowrap;
-  margin-left: 8%; /* or any specific value */
-}
+
 
 
 
@@ -512,82 +539,27 @@ nav a:hover,
 /* latest job */
 .containerNapud {
   display: flex;
-  margin-left: 50px;
+  margin-left: 50px; 
   white-space: nowrap;
   overflow: hidden;
-  border-radius: 5px;
-  padding: 0px;
-  box-sizing: border-box;
-  
 }
-.styledElement {
-  margin-right: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 3px black; 
-  border-radius: 5px;
-  z-index: -1;
-  box-shadow: 0 0 5px #ccc;
-}
-
-.styledElement ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.styledElement li {
-  margin-bottom: 5px; 
-  padding-left: 20px; 
-  position: relative;
-}
-
-.styledElement li:before {
-  content: '\2022'; 
-  color: black; 
-  font-size: 18px; 
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-right: 5px; 
-}
-
-.styledElement:nth-child(1) .posted1 {
-  color: #548BAB;
-}
-
-.styledElement:nth-child(2) .posted1 {
-  color: #548BAB;
-}
-
-.styledElement:nth-child(3) .posted1 {
-  color: #548BAB;
-}
-.styledElement:nth-child(4) .posted1 {
-  color: #548BAB;
-}
-
-.styledElement:nth-child(5) .posted1 {
-  color: #548BAB;
-}
-.styledElement:nth-child(6) .posted1 {
-  color: #548BAB;
-}
-
 
 .custom-icon-buttons {
   display: flex;
 }
+
 .custom-icon-button {
   background-color: #ddd;
   border: none;
   cursor: pointer;
   padding: 5px;
 }
+
+
 .invisible-container{
   margin-top: 50px;
 }
+
 .custom-icon-buttons {
   display: flex;
   align-items: flex-end; 
@@ -595,8 +567,9 @@ nav a:hover,
   margin-left: auto;
   margin-right: 300px;
   margin-top: 20px;
-  z-index: 1;
+  margin-bottom: 10px;
 }
+
 .custom-icon-button {
   background-color: #C9DFEE;
   color: black;
@@ -606,9 +579,78 @@ nav a:hover,
   border-radius: 50px;
   cursor: pointer;
 }
+
 .jobsLatest{
   margin-left: 50px;
 }
-.learn{
-  margin-top: 30px;
+
+
+.styledElement {
+  width: 300px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  gap: 4px;
+  border: 1px solid #E5E5E5;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.passion10{
+  display: none;
+}
+.posted10{
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #548BAB;
+  text-align: left;
+}
+
+.posted{
+  font-family: Inter sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8C8C8C;
+  text-align: left;
+}
+
+.postedTitle{
+  font-family: Montserrat sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000000;
+}
+
+.posted1 {
+  font-family: Montserrat sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #548BAB;
+  margin-top: 10px;
+}
+
+ul {
+  text-align: left !important; 
+}
+
+.bullet {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  display: grid;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: #000000;
 }

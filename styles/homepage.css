@@ -370,7 +370,7 @@ nav a:hover,
   width: auto;
   height: 56px;
 }
-
+ 
 .OurDivisions {
   font-size: 24px; 
   color: #333;
@@ -1151,13 +1151,16 @@ button.button-primary:hover {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    overflow-x: hidden;
-    min-height: 100vh;
-    text-align: left;
-    /* max-width: 375px;  */
-    margin: 0 auto; 
-    box-sizing: border-box; 
+    overflow-y: auto; /* Automatically show scrollbar when needed */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
   }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+  }
+  
+  
 
   html{
     overflow-x: hidden;

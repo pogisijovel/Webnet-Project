@@ -324,4 +324,55 @@
   <img src="/pictures/bot.png" alt="bot">
 </div>
 
+<script>
+  function scrollDirection(direction) {
+  const jobContainer = document.getElementById('jobContainer');
+  const distance = 100;
+  const scrollAmount = direction === 'left' ? -distance : distance;
+
+  const currentScroll = jobContainer.scrollLeft;
+  const targetScroll = currentScroll + scrollAmount;
+
+  animateScroll(jobContainer, targetScroll);
+}
+
+function animateScroll(element, targetScroll) {
+  const duration = 500;
+  const startTime = performance.now();
+  const startScroll = element.scrollLeft;
+
+  function scroll(timestamp) {
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easeInOut(progress);
+
+    element.scrollLeft = startScroll + (targetScroll - startScroll) * easedProgress;
+
+    if (progress < 1) {
+      requestAnimationFrame(scroll);
+    }
+  }
+
+  requestAnimationFrame(scroll);
+}
+
+function easeInOut(t) {
+  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const scrollLeftButton = document.getElementById("scrollLeftButton");
+  const scrollRightButton = document.getElementById("scrollRightButton");
+
+  scrollLeftButton.addEventListener("click", function() {
+    scrollDirection('left');
+  });
+
+  scrollRightButton.addEventListener("click", function() {
+    scrollDirection('right');
+  });
+});
+
+</script>
+</body>
 </html>

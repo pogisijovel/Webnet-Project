@@ -290,19 +290,17 @@
      <div class="invisible-container">
       <div class="job-container">
         <h2 class="jobsLatest">Jobs at Gleeson</h2>
-      <div class="custom-icon-buttons">
-        <button class="custom-icon-button" id="scrollLeftButton">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <button class="custom-icon-button" id="scrollRightButton">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
+        <div class="custom-icon-buttons">
+          <button class="custom-icon-button" id="scrollLeftButton">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="custom-icon-button" id="scrollRightButton">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
       
       <div class="scroll-container">
-   
-   
         <div class="containerNapud">
           <div class="styledElement">
             <p class="posted">Posted 24 Aug</p>
@@ -452,5 +450,33 @@
           <img src="/pictures/desktop.png" alt="bot">
         </div>
 
+        <script>
+          
+    const scrollLeftButton = document.getElementById('scrollLeftButton');
+    const scrollRightButton = document.getElementById('scrollRightButton');
+    const containerNapud = document.querySelector('.containerNapud');
+
+    let scrollAmount = 0;
+
+    scrollRightButton.addEventListener('click', () => {
+      scrollAmount += 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    scrollLeftButton.addEventListener('click', () => {
+      scrollAmount -= 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+
+        </script>
 </body>
 </html>

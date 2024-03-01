@@ -124,7 +124,7 @@ nav a:hover,
 
 .register-btn {
   border-radius: 60px;
-  background-color: #548bab;
+  background-color: #548bab; 
   color: white;
   border: none;
   padding: 14px 20px;
@@ -139,7 +139,7 @@ nav a:hover,
   height: 47px;
 }
 
-
+ 
 /* footer */
 .footer {
   background-color: #FFFFFF;
@@ -148,7 +148,6 @@ nav a:hover,
   margin-top: 10%;
   display: flex;
   align-items: flex-start;
- 
   justify-content: space-between;
 }
 
@@ -249,61 +248,145 @@ nav a:hover,
   margin-top: 20px;
 }
 
-/* talent talks */
-.talent {
+.talent1{
   width: 100%;
-  height: 364px;
-  margin: 0;
-  padding: 0; 
 }
 
-/* search bar */
-.search-container {
+.talent_talks{
+  width: 100%;
+}
+
+/* talent talks */
+.talent,
+.buttonContainers,
+.bato-container {
   display: flex;
-  margin-top: 4%;
-  margin-right: 10%;
-  margin-left: 23%;
-}
-
-.search-input {
-  padding: 15px; 
-  width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 30px; 
-  outline: none; 
-}
-
-.search-button {
-  width: 268px;
-  height: 68px;
-  padding: 16px 24px;
-  border-radius: 100px;
-  border: 1px solid #ccc;
-  background-color: #548BAB;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  justify-content: center; 
   align-items: center;
-  margin-left: 3%; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* features */
-.header-container {
-  background-color: white; 
-  color: black;
-  margin-right: 5%;
-  margin-left: 7%;
-  padding: 20px;
+.talent {
+  width: 543px;
+  height: 70px;
+  margin-top: 100px;
+  opacity: 0.7;
 }
 
-.featured-posts-heading {
-  font-size: 24px;
+.buttonContainers {
+  margin-top: 50px;
+}
+
+
+.bato-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.nameContainer .bato {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameContainer {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bato {
+  width: 383.23px;
+  height: 237px;
+  border-radius: 7.35px;
+  opacity: 0.5;
+}
+
+
+
+
+.insights {
+  height: 23.35px;
+  padding: 3.68px 12.87px;
+  border-radius: 19.3px;
+  background-color: #548BAB;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 0.5;
+  position: block;
+}
+
+button.button-primary {
+  background-color: #548BAB;
+  color: white;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+  opacity: calc(0.5);
+}
+
+button.button-primary:hover {
+  background-color: blue;
+}
+
+.what,
+.whatThe,
+.Q {
+  font-family: Montserrat sans-serif;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 27px;
   letter-spacing: 0px;
   text-align: left;
+  opacity: 0.5;
 }
+
+.whatThe {
+  color: #548BAB;
+}
+
+.Q {
+  font-family: Inter sans-serif;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8F8F8F;
+  opacity: 0.5;
+}
+
+.read {
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8px 16px;
+  color: #548BAB;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 
 /* apir */
 .pic {
@@ -351,6 +434,14 @@ nav a:hover,
 }
 
 /* all posts */
+.featured-posts-heading{
+  background-color: white; 
+  color: black;
+  margin-right: 5%;
+  margin-left: 3%;
+  padding: 20px;
+}
+
 .header-container2 {
   background-color: white; 
   color: black;
@@ -365,6 +456,31 @@ nav a:hover,
   line-height: 36px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  padding: 15px; 
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 30px; 
+  outline: none; 
+  margin: 10px;
+}
+
+.search-button {
+  width: 268px;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  background-color: #548BAB;
+  color: #fff;
+  cursor: pointer;
 }
 
 
@@ -429,6 +545,7 @@ nav a:hover,
   display: flex;
   margin-left: 70px;
   margin-right: 70px;
+  gap: 20px;
 }
 
 .bato {

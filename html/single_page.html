@@ -136,84 +136,78 @@
       <div class="containerNapud">
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
-         
-
-<div class="styledElement">
+  
+        <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
-
 
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
-
 
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
-
 
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
-
 
         <div class="styledElement">
           <p class="posted">Posted 24 Aug</p>
-          <h2 class="postedTitle">Data Scientist</h2>
+          <p class="postedTitle">Data Scientist</p>
           <p class="posted1">Darwin, All Darwin <br>$122,000 - $152,565 Annual Salary <br>Permanent</p>
           <ul>
-            <li class="bullet">Mon 2 November - Sun 31 January, 2021</li>
-            <li class="bullet">Public Hospital in Canberra</li>
-            <li class="bullet">Medical Assessment Planning Unit</li>
+            <li class="bullet">&bull; Mon 2 November - Sun 31 January, 2021</li>
+            <li class="bullet">&bull; Public Hospital in Canberra</li>
+            <li class="bullet">&bull; Medical Assessment Planning Unit</li>
           </ul>
-          <img src="/pictures/Learn more.png" alt="pic" class="learn">
+          <img src="/pictures/learn.png" alt="pic" class="learn">
         </div>
         
       </div>
     </div>
-  </div>
   
 
 <!------------------------- footer --------------------------->
@@ -276,5 +270,31 @@
     <div class="bott">
       <img src="/pictures/bot.png" alt="bot">
     </div>
+
+    <script>
+      const scrollLeftButton = document.getElementById('scrollLeftButton');
+    const scrollRightButton = document.getElementById('scrollRightButton');
+    const containerNapud = document.querySelector('.containerNapud');
+
+    let scrollAmount = 0;
+
+    scrollRightButton.addEventListener('click', () => {
+      scrollAmount += 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    scrollLeftButton.addEventListener('click', () => {
+      scrollAmount -= 300; 
+      containerNapud.scrollTo({
+        top: 0,
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+    </script>
   </body>
 </html>
