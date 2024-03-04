@@ -1204,7 +1204,7 @@ button.button-primary:hover {
   
   .hamburger-menu {
     width: 80px;
-    display: flex;
+    display: flex; 
     align-items: center;
     margin-left: auto; 
   }
