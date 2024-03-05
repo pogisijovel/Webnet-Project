@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/cv.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>CV</title>
+</head>
+
+<body>
+    <!------------------------ Nav Bar ------------------------------------------->
+    <nav>
+      <img src="/pictures/glesson-logo.svg" alt="Gleeson Logo" class="glesson">
+      <ul>
+        <li>
+          <a class="dropdown-btn" href="#">Job Seekers <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        
+        <li>
+          <a class="dropdown-btn" href="#">Employers <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="dropdown-btn" href="#">Divisions <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="dropdown-btn" href="#">Talent Talks</a>
+      <a class="dropdown-btn" href="#">Contact Us</a>
+    
+    <div class="button-container">
+      <button class="login-btn">Log in</button>
+      <button class="register-btn">Register</button>
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    
+    </nav>
+    <!--------------------------------------------------------------------------->
+
+    <img src="/pictures/cv_submit.png" alt="CV Header" class="cv_submit">
+
+
+    <!---------------------------------------------------------------------------->
+    <div class="form">
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-field">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter your phone number">
+      </div>
+      <div class="form-field">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-field">
+        <label for="cv">Please upload your CV:</label>
+        <div class="upload-area">
+          <span class="upload-btn">Drag and drop or</span>
+          <label for="cv" class="upload-btn">click to upload</label>
+        </div>
+        <input type="file" id="cv" name="cv" accept=".pdf" style="display: none;">
+      </div>
+      
+      <div class="form-field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+      </div>
+    </div>
+    <!---------------------------------------------------------------------------->
+    <div class="captcha-container">
+      <div class="captcha-text">Please confirm that you are not a robot:</div>
+      <div class="captcha-checkbox">
+        <input type="checkbox" id="captcha-checkbox" name="captcha-checkbox">
+        <label for="captcha-checkbox"></label>
+      </div>
+    </div>
+    <div class="privacy-text">By checking this box, you agree to our <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</div>
+    
+   
+    <button class="submit">
+      Submit
+    </button>
+
+<!----------------------------------------------------------- square 3 --------------------------------->
+    <div class="square3">
+      <div class="orangeSmile">
+        <img src="/pictures/orangeSmile.png" alt="pic" class="orange">
+      </div>
+    
+    
+      <div class="shesh">
+        <div class="passionPeople">
+          <img src="/pictures/whatever.png" alt="pic" class="passion">
+          <p class="Looking">We’d love to explore how we can help your workplace to thrive. Drop us a message and we’ll get back to you soon, or learn more about our areas of specialisation.</p>
+          <button class="browse">Get in touch</button>
+          <button class="vacancy">See all divisions</button>
+        </div>
+      </div>
+    </div>
+    
+    <!---------------------------------------------------------------------------->
+    
+    <div class="footer">
+      <div class="footer-logo">
+          <img class="footerLogo" src="/pictures/glesson-logo.svg" alt="Gleeson Logo">
+          <h1 class="glee">#workwithglee</h1>
+      </div>
+      
+        <div class="footer-column">
+          <h3>Employers</h3>
+          <a href="#">Why Gleeson?</a>
+          <a href="#">Submit a Vacancy</a>
+        </div>
+        <div class="footer-column">
+          <h3>Job Seekers</h3>
+          <a href="#">Why Gleeson?</a>
+          <a href="#">Latest Jobs</a>
+          <a href="#">Job Alerts</a>
+          <a href="#">Register</a>
+          <a href="#">Login</a>
+          <a href="#">Submit CV</a>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="#">Our Divisions</a>
+          <a href="#">About Us</a>
+          <a href="#">Meet the Team</a>
+          <a href="#">Talent Talks</a>
+        </div>
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <a href="#">Resource Hub</a>
+          <a href="#">Key Information Documentation</a>
+        </div>
+      </div>
+      
+      <div class="footer-line2"></div>
+  <div class="centered-text">
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+  </div>
+
+  <div class="footer-line">
+    
+  </div>
+  <div class="social-icons">
+      <img class="icon" src="/pictures/ig.png" alt="Instagram Logo">
+      <img class="icon" src="/pictures/yt.png" alt="YouTube Logo">
+      <img class="icon" src="/pictures/in.png" alt="LinkedIn Logo">
+  </div>
+
+  <div class="bott">
+    <img src="/pictures/bott1.png" class="bott1">
+    <img src="/pictures/bott2.png" class="bott2">
+  </div>
+
+    </body>
+</html>

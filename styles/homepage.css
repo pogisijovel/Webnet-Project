@@ -975,60 +975,60 @@ button.button-primary:hover {
   margin-bottom: 20px;
 }
 
-/* OrangeSMile */
-.square3 {
-  width: 100%;
-  height: 464px;
-  background-color: #C9DFEE;
-  display: flex;
-  justify-content: flex-start; 
-  align-items: center;
-  position: relative;
-  z-index: 0;
-  margin-top: 200px;
-}
+  /* OrangeSMile */
+  .square3 {
+    width: 100%;
+    height: 464px;
+    background-color: #C9DFEE;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    margin-top: 200px;
+  }
 
-.shesh{
-  margin-left: 70px;
-}
-.orangeSmile {
-  margin-top: 100px;
-}
+  .shesh{
+    margin-left: 70px;
+  }
+  .orangeSmile {
+    margin-top: 100px;
+  }
 
-.Looking{
-  width: 586px;
-  height: 48px;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-}
+  .Looking{
+    width: 586px;
+    height: 48px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 
-.browse{
-  width: 212.77px;
-  height: 55.37px;
-  border: none;
-  top: 153px;
-  padding: 17.51px, 78px, 17.51px, 78.12px;
-  border-radius: 36px;
-  gap: 13.47px;
-  color: #FFFFFF;
-  background-color: #548BAB;
-}
+  .browse{
+    width: 212.77px;
+    height: 55.37px;
+    border: none;
+    top: 153px;
+    padding: 17.51px, 78px, 17.51px, 78.12px;
+    border-radius: 36px;
+    gap: 13.47px;
+    color: #FFFFFF;
+    background-color: #548BAB;
+  }
 
-.vacancy{
-  width: 212.77px;
-  height: 55.37px;
-  top: 153px;
-  border: none;
-  padding: 17.51px, 78px, 17.51px, 78.12px;
-  border-radius: 36px;
-  gap: 13.47px;
-  color: #548BAB;
-  background-color: #FFFFFF;
-}
+  .vacancy{
+    width: 212.77px;
+    height: 55.37px;
+    top: 153px;
+    border: none;
+    padding: 17.51px, 78px, 17.51px, 78.12px;
+    border-radius: 36px;
+    gap: 13.47px;
+    color: #548BAB;
+    background-color: #FFFFFF;
+  }
 
 /* Footer styles */
 .footer {

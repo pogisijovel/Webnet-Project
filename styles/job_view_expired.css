@@ -200,6 +200,7 @@ nav a:hover,
   position: absolute;
   width: 139px;
   height: 18px;
+  color: red;
   left: 81px;
   top: 15px;
   font-family: 'Montserrat';
@@ -208,7 +209,6 @@ nav a:hover,
   font-size: 12px;
   line-height: 150%;
   text-align: center;
-  color: #AEAEAA;
 }
 
 .btn{
@@ -468,39 +468,46 @@ color: #000000;
 
 
  /* ***********************************************************************************  */
+
+
+
+
+/* Style for the container */
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-left: 186px;
 }
 
+/* Style for the Mark Steyn image */
+.container img {
+  width: 258.03px; /* Adjust the width as needed */
+  height: 292px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add some spacing between images */
+}
+
+/* Style for the threeimg container */
 .threeimg {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Add some spacing between contact items */
+  text-align: left;
 }
 
-.contact {
-  display: flex;
-}
-
-
-.number {
-  display: flex;
-  margin-top: 5px;
-  color: black;
+/* Style for each image in threeimg */
+.threeimg img {
+  display: block;
+  margin: 10px 0; /* Add some spacing between images */
+  width: 25px; /* Adjust the width as needed */
+  height: auto;
 }
 
 
 /* Additional styles for the details section */
 .ConsultDetails {
-  margin-top: 20px; 
+  margin-top: 20px; /* Add margin to separate the sections */
   margin-left: 186px;
 }
 
 .Title4{
-width: 550px;
+  width: 550px;
 height: 51px;
 top: 1637px;
 left: 82px;
@@ -532,131 +539,6 @@ opacity: 0.7px;
 
 
 /* ************************************************************************************* */
-
-
-
-
-/* Invisible Container */
-.containerNapud {
-  display: flex;
-  margin-left: 148px; 
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.custom-icon-buttons {
-  display: flex;
-}
-
-.custom-icon-button {
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-}
-
-
-.invisible-container{
-  margin-top: 50px;
-}
-
-.custom-icon-buttons {
-  display: flex;
-  align-items: flex-end; 
-  justify-content: flex-end; 
-  margin-left: auto;
-  margin-right: 10px;
-  margin-top: 20px;
-  z-index: 1;
-}
-
-.custom-icon-button {
-  background-color: #C9DFEE;
-  color: black;
-  padding: 10px;
-  margin: 5px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.jobsLatest{
-  margin-left: 186px;
-  font-weight: 900;
-  font-family: Montserrat sans-serif;
-}
-
-
-.styledElement {
-  width: 300px;
-  padding: 20px 30px;
-  border-radius: 8px;
-  gap: 4px;
-  border: 1px solid #E5E5E5;
-  margin-right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.passion10{
-  display: none;
-}
-.posted10{
-  margin-left: 11%;
-  font-family: Inter;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 12px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #548BAB;
-  text-align: left;
-}
-
-.posted{
-  font-family: Inter;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 12px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #8C8C8C;
-  text-align: left;
-}
-
-.postedTitle{
-  font-family: Montserrat sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #000000;
-}
-
-.posted1 {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #548BAB;
-  margin-top: 10px;
-}
-
-ul {
-  text-align: left !important; 
-}
-
-.bullet {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  display: grid;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0px;
-  color: #000000;
-}
 
 
 
@@ -847,77 +729,4 @@ ul {
 
 .bott img {
   margin-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    overflow-y: auto; /* Automatically show scrollbar when needed */
-    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
-  }
-  
-  body::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
-  }
-  
-  
-
-  html{
-    overflow-x: hidden;
-  }
-  .glesson {
-    width: 125.55px;
-    height: 46.67px;
-  }
-
-  nav{
-    margin-bottom: 10%;
-  }
-  nav a,
-  .dropdown-btn {
-    display: none; 
-  }
-
-  .register-btn {
-    margin-right: 0; 
-  }
-
-  .login-btn {
-    display: none; 
-  }
-
-  .register-btn {
-    width: 92px;
-    height: 27.6px;
-    border-radius: 23px;
-    background-color: #548BAB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto; 
-  }
-
-  .button-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .hamburger-menu {
-    width: 80px;
-    display: flex; 
-    align-items: center;
-    margin-left: auto; 
-  }
-  
-  .line {
-    width: 30%;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-    background-color: #548BAB;  
-  }
 }
