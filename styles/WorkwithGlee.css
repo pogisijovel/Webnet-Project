@@ -247,7 +247,7 @@ nav a:hover,
   font-size: 16px;
   cursor: pointer;
   width: 10%;
-  margin-top: 8%;
+  margin-top: 20vh;
   }
 
   /* ------------------------------ */
@@ -985,10 +985,29 @@ nav a:hover,
    
   .bott {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
-   
-   
+  
+  
+  .bott1 {
+    margin-right: auto;
+    width: auto;
+    height: 50px;
+    margin-left: 50px;
+  }
+  
+  
+  .bott2 {
+    margin-left: auto;
+    margin-right: 50px ;
+  }
+  
+  
+  .mid {
+    margin: 0 auto;
+  }
+  
+  
   .bott img {
     margin-top: 20px;
   }

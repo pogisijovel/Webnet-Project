@@ -1,6 +1,6 @@
 body {
   font-family:'Montserrat';
-  background-color: white;
+  background-color: #fff;
   overflow: auto;
   padding: 0;
   margin: 0;
@@ -21,7 +21,6 @@ body {
 nav {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -46,7 +45,7 @@ li {
   display: block;
 }
 
-
+ 
 ul li ul.dropdown {
   position: absolute;
   z-index: 999;
@@ -145,42 +144,89 @@ nav a:hover,
   height: 47px;
 }
 
-/* cb submit */
-.cv_submit{
-  width: 100%;
-  height: 314px;
-}
-/* form */
-
-.form {
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  margin-top: 30px;
-  margin-left: auto; 
-  margin-right: auto;
-  padding: 50px;
+  padding: 30px;
+  margin: 5vh auto 0; 
   background-color: #F9F9F9;
 }
 
-
-.form-field {
-  margin-bottom: 20px;
+.let{
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.upload-area {
-  width: 90%;
-  border: 2px dashed #ccc;
-  padding: 20px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
+.contact{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.upload-btn {
-  color: #007bff;
-  cursor: pointer;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.row > div:last-child {
+  margin-right: 0;
+}
+
+.row label {
   display: block;
-  margin: 0 auto;
-  text-align: center;
+  margin-bottom: 5px;
+}
+
+.row input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.row label::after {
+  content: "*";
+  color: red;
+  margin-left: 3px;
+}
+
+
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 .captcha{
@@ -207,65 +253,15 @@ nav a:hover,
   margin-left: 20vh;
 }
 
-.privacy-text {
-  font-size: 12px;
-  color: #666;
-  margin-top: 5px;
-  margin-left: 20vh;
-}
-
-.privacy-text a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.submit{
-  margin-top: 100px;
-  margin-left: 20vh;
+.send{
   width: 200px;
   height: 60px;
   border-radius: 50px;
   background-color: #548BAB;
-  border: none;
-  color: white;
+  margin-left: 20vh;
+  margin-top: 5vh;
 }
 
-/* Style the label as a button */
-.upload-btn:hover {
-  text-decoration: underline;
-}
-
-.form-field label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-field input[type="text"],
-.form-field input[type="tel"],
-.form-field input[type="email"],
-.form-field input[type="file"] {
-  width: 100%;
-  padding: 5px;
-  border: none;
-}
-
-.form-field textarea {
-  width: 100%;
-  padding: 5px;
-  height: 100px;
-}
-
-.form-field input[type="submit"] {
-  width: 100%;
-  padding: 5px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-/* square 3 */
-/* OrangeSMile */
 .square3 {
   width: 100%;
   height: 464px;

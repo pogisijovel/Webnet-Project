@@ -238,7 +238,26 @@ nav a:hover,
 
 .bott {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
+
+
+.mid {
+  margin: 0 auto;
 }
 
 

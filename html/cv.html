@@ -104,14 +104,14 @@
       </div>
     </div>
     <!---------------------------------------------------------------------------->
-    <div class="captcha-container">
-      <div class="captcha-text">Please confirm that you are not a robot:</div>
-      <div class="captcha-checkbox">
-        <input type="checkbox" id="captcha-checkbox" name="captcha-checkbox">
-        <label for="captcha-checkbox"></label>
-      </div>
+    <div class="captcha">
+      <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+      <div class="captcha-info">
+        <pr class="robot">I'm not a robot</pr>
     </div>
-    <div class="privacy-text">By checking this box, you agree to our <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</div>
+  
+  <!-- Include the reCAPTCHA API script -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
    
     <button class="submit">

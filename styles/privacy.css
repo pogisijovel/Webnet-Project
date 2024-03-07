@@ -169,12 +169,7 @@ text-align: left;
     margin-left: 20px;
 }
 
-.bullet::before {   
-  content: "•";    
-  color: #000000;   
-  position: absolute;   
-  left: 0; 
-}
+
 
 
 /*  */

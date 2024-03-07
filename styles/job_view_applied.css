@@ -149,8 +149,8 @@ nav a:hover,
           height: 60px;
           right: 0px;
           top: 0px;
-          margin-top: 7%;
-          margin-right: 5%;
+          margin-top: 21vh;
+          margin-right: 16vh;
       }
 
       /* Button Background */
@@ -179,9 +179,10 @@ nav a:hover,
   position: absolute; 
   width: 300px;
   height: 331px;
-  right: 100px;
-  top: 205px;
+  margin-top: 30vh;
+  right: 15vh;
 }
+
 
 .rectangle2 {
   position: absolute;
