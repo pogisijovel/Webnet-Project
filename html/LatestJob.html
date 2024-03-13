@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/LatestJob.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Latest Job</title>
+</head>
+
+<body>
+
+    <!------------------------ Nav Bar ------------------------------------------->
+    <nav>
+      <img src="/pictures/glesson-logo.svg" alt="Gleeson Logo" class="glesson">
+      <ul>
+        <li>
+          <a class="dropdown-btn" href="#">Job Seekers <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        
+        <li>
+          <a class="dropdown-btn" href="#">Employers <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="dropdown-btn" href="#">Divisions <img src="/pictures/arrow-down.png"></a>
+          <ul class="dropdown">
+            <li><a href="#">Programmer</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+            <li><a href="#">Engineers</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="dropdown-btn" href="#">Talent Talks</a>
+      <a class="dropdown-btn" href="#">Contact Us</a>
+    
+    <div class="button-container">
+      <button class="login-btn">Log in</button>
+      <button class="register-btn">Register</button>
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+   </nav> 
+<!-- Latest -->
+<div class="container1">
+  <h1 class="latest">
+    Latest Jobs
+  </h1>
+  <p class="latest_para">
+    Check out the latest opportunities available through Gleeson Recruitment.
+  </p>
+</div>
+
+<!-- /****************************************************************************************/ -->
+<div class="sudlanan">
+  <!-- first input -->
+  <div class="input-container first">
+    <label for="input3">KEYWORDS</label>
+    <input class="hehe" type="text" id="input3" name="input3" placeholder="Enter Keyword">
+  </div>
+
+  <!-- second input -->
+  <div class="input-container second">
+    <label for="input1">CLASSIFICATION</label>
+    <select class="hehe" id="input1" name="input1">
+      <option value="" selected>All Classification</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <!-- third input -->
+  <div class="input-container third">
+    <label for="input2">LOCATION</label>
+    <select class="hehe" id="input2" name="input2">
+      <option value="" selected>All Location</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+  <button class="search">Search</button>
+</div>
+
+<div class="buttons">
+  <button class="button">Marketing <i class="fas fa-times"></i></button>
+  <button class="button">Marketing <i class="fas fa-times"></i></button>
+  <button class="button">Marketing <i class="fas fa-times"></i></button>
+  <button class="button1">Clear All</button>
+</div>
+
+<!------------------------------------Salary Fair------------------------------------------------->
+<div class="sulodDeane">
+<div class="deane">
+  <h1 class="salary">Salary Filter</h1>
+  <div class="salaryEnter">
+    <input list="options" class="hehe" id="input1" name="input1" placeholder="Enter Text">
+    <datalist id="options">
+        <option value="Option 1">
+        <option value="Option 2">
+        <!-- Add more options as needed -->
+    </datalist>
+  </div>
+  <div class="banana-flex-container">
+    <div class="apple-container">
+        <span class="apple-sign">$</span>
+        <input type="number" placeholder="Min" class="apple-input">
+    </div>
+    <span class="separator">-</span>
+    <div class="orange-container">
+        <span class="orange-sign">$</span>
+        <input type="number" placeholder="Max" class="orange-input">
+    </div>
+  </div>
+
+    <div class="classification">
+      <div class="classification-header">Classification</div>
+      <div class="checkboxes">
+        <label>
+          <input type="checkbox" name="classification" value="Consultant/Funct. Consultant">
+          Consultant/Funct. Consultant
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="classification" value="Analyst/Programmer">
+          Analyst/Programmer
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="classification" value="Business Analyst">
+          Business Analyst
+        </label>
+      </div>
+    </div>
+    <div class="title">
+      <div class="title-header" style="color: #548BAB;">Title</div>
+      <div class="checkboxes">
+        <label>
+          <input type="checkbox" name="title" value="Consultant/Funct. Consultant">
+          Consultant/Funct. Consultant
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="title" value="Analyst/Programmer">
+          Analyst/Programmer
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="title" value="Business Analyst">
+          Business Analyst
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="crisem">
+    <div class="twoButtons"> 
+      <p class="head">Showing 6 of 215 jobs</p>
+      <button class="job">Save Job Alert</button>
+      <div class="dropdown">
+        <button class="sort" onclick="toggleDropdown()">Sort by <span class="arrow">&#9660;</span></button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>      
+    </div>
+
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+    <div class="container11">
+      <div class="column11">
+        <div class="title11">Project Manager</div>
+        <div class="info1">National Australia Bank</div>
+        <div class="info">Western Suburbs</div>
+        <div class="info">$60,000 - $79,999</div>
+      </div>
+      <div class="column11">
+        <div class="lorem">Lorem ipsum dolor sit amet,</div>
+        <div>consectetur adipiscing elit. Eget</div>
+        <div>suspendisse eget lectus condimentum</div>
+        <div>sit fermentum aenean pulvinar cras.</div>
+      </div>
+      <div class="column11">
+        <div class="posted1">Posted on 24th Sept 2021</div>
+        <div class="buttons11">
+          <a href="#" class="button11"><i class="fas fa-heart"></i> Unsave</a>
+          <a href="#" class="button11"><i class="fas fa-envelope"></i> Email to</a>
+        </div>
+      </div>
+      <div class="footer1">
+        Managerial > Specialist
+      </div>
+    </div>
+    <div class="line1"></div>
+  </div>
+</div>
+
+
+<!------------------------------------footer------------------------------------------------->
+<div class="footer">
+  <div class="footer-logo">
+      <img class="footerLogo" src="/pictures/gleeson-logo2.svg" alt="Gleeson Logo">
+      <h1 class="glee">#workwithglee</h1>
+  </div>
+  
+    <div class="footer-column">
+      <h3>Employers</h3>
+      <a href="#">Why Gleeson?</a>
+      <a href="#">Submit a Vacancy</a>
+    </div>
+    <div class="footer-column">
+      <h3>Job Seekers</h3>
+      <a href="#">Why Gleeson?</a>
+      <a href="#">Latest Jobs</a>
+      <a href="#">Job Alerts</a>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+      <a href="#">Submit CV</a>
+    </div>
+    <div class="footer-column">
+      <h3>Company</h3>
+      <a href="#">Our Divisions</a>
+      <a href="#">About Us</a>
+      <a href="#">Meet the Team</a>
+      <a href="#">Talent Talks</a>
+    </div>
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <a href="#">Resource Hub</a>
+      <a href="#">Key Information </a>
+      <a href="#"> Documentation</a>
+    </div>
+  </div>  
+ 
+
+
+</div>
+
+
+<div class="centered-text">
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Cookie Policy</a>
+</div>
+
+<div class="footer-line">
+
+</div>
+<div class="social-icons">
+  <img class="icon" src="/pictures/icon-in.png" alt="Instagram Logo">
+  <img class="icon" src="/pictures/icon-yt.png" alt="YouTube Logo">
+  <img class="icon" src="/pictures/icon-ig.png" alt="LinkedIn Logo">
+</div>
+
+<div class="bott">
+<img src="/pictures/bott1.png" class="bott1">
+<img src="/pictures/bott2.png" class="bott2">
+</div>
+
+    <script>
+      function toggleCheckbox(checkbox) {
+        var checkboxes = document.querySelectorAll('.checkbox');
+        
+        checkboxes.forEach(function (cb) {
+          if (cb !== checkbox) {
+            var otherCheckboxBox = cb.querySelector('.checkbox-box');
+            otherCheckboxBox.classList.remove('checked');
+            otherCheckboxBox.innerHTML = ''; // Remove the checkmark
+          }
+        });
+    
+        var checkboxBox = checkbox.querySelector('.checkbox-box');
+        checkboxBox.classList.toggle('checked');
+    
+        // Add or remove the checkmark
+        if (checkboxBox.classList.contains('checked')) {
+          checkboxBox.innerHTML = '&#10003;'; // Checkmark symbol
+        } else {
+          checkboxBox.innerHTML = ''; // Remove the checkmark
+        }
+      }
+
+      function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  dropdownContent.classList.toggle("show-dropdown");
+}
+
+    </script>
+  </body>
+</html>
