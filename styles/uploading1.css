@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-flow: column;
+}
+
+.glesson{
+    width: 150px; 
+    height: auto; 
+    top: 15px;
+    left: 0.45px;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  padding: 0px 112px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn-exit{
+  width: 110px;
+  height: 40px;
+  top: 27px;
+  left: 1121px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 50px;
+  border: 2px solid #548BAB;
+  background-color: white;
+  color: #548BAB;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.btn-exit:hover {
+  background-color: #548BAB;
+  color: white;
+}
+
+
+.btn-exit:active {
+  background-color: #0E6EB8;
+  border-color: #0E6EB8;
+}
+
+/* -------job listing-------- */
+
+.job-listing {
+  width: 100%;
+  max-width: 497px;
+  height: 89vh; 
+  margin: 2px 0 0;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  overflow-y: scroll; /* Enable vertical scrolling */
+
+  /* WebKit */
+  scrollbar-width: none;
+  -webkit-scrollbar {
+    display: none; 
+  }
+}
+
+.job-title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #595959;
+}
+
+.salary {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  line-height: 21px;
+  color: #595959;
+}
+
+.job-details {
+  margin-bottom: 20px;
+}
+
+.job-details ul {
+  padding-inline-start: 20px; /* Adjust this value as needed */
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.subheading {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: 'Open Sans', Times, serif;
+}
+
+.subheading_par {
+  font-size: 14px;
+  /* margin-top: 30px; */
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: 'Inter', Times, serif;
+}
+/* -------------------------- */
+
+.container {
+  position: relative; /* Ensure the container is positioned relatively */
+  display: flex;
+}
+
+.rContainer {
+  width: 100%;
+  position: relative;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.back{
+  text-decoration: none;
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #548BAB;
+  line-height: 21px;
+}
+
+.steps {
+  font-family: 'Montserrat', Times, serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #aeaeae;
+  border-bottom: 3px solid #C9DFEE; /* Add bottom border */
+  padding-bottom: 5px; /* Optional: Add some space between text and border */
+  
+}
+
+.back_steps {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Align items at the start and end */
+}
+
+
+.bott {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bott1 {
+  margin-right: auto;
+  width: auto;
+  height: 50px;
+  margin-left: 50px;
+}
+
+.bott2 {
+  margin-left: auto;
+  margin-right: 50px ;
+}
