@@ -6,7 +6,6 @@
 body {
   font-family: Arial, sans-serif;
   width: 100%;
-  height: 100%;
   background-color: #F9F9F9;
   display: flex;
   flex-flow: column;
@@ -156,6 +155,7 @@ nav {
   position: relative;
   margin-right: auto;
   padding: 40px;
+  margin-left: 40px;
 }
 
 .back{
@@ -184,9 +184,283 @@ nav {
 }
 
 
+.paragraph{
+width: 727px;
+height: 23px;
+top: 76px;
+gap: 0px;
+opacity: 0px;
+font-family: Montserrat sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+margin-top: 44px;
+}
+
+.fullName{
+  display: flex;
+  position: relative;
+}
+
+.firstName{
+  width: 89px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #AEAEAA;
+  margin-top: 30px;
+  }
+
+  .firstName1{
+    width: 416px;
+    height: 40px;
+    gap: 0px;
+    padding-left: 5px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #AEAEAA;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  .lastName{
+    width: 89px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #AEAEAA;
+    margin-top: 30px;
+  }
+
+  .lastName1{
+    width: 416px;
+    height: 40px;
+    gap: 0px;
+    padding-left: 5px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #AEAEAA;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  .first, .last{
+    margin: 30px;
+  }
+
+  .contacts{
+    display: flex;
+    position: relative;
+  }
+
+  .Email{
+    width: 116px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left; 
+  }
+
+  .Email1{
+    width: 416px;
+    height: 40px;
+    gap: 0px;
+    padding-left: 5px;
+    border-radius: 16px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #AEAEAA;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+
+  .Emailadd, .Emailminus{
+    margin: 30px;
+  }
+
+  .contact{
+    width: 116px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left; 
+    color: #AEAEAA;
+  }
+
+
+  .container11 {
+    position: relative;
+    width: 862px;
+    height: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.upload-progress {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-progress.dragover {
+  background-color: #f0f0f0;
+}
+
+.upload-progress::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #007bff; /* Change color as needed */
+  width: 0; /* Start with 0 width */
+  transition: width 0.3s ease; /* Add transition for smooth effect */
+}
+
+
+.upload-text {
+  color: #666;
+  font-size: 16px;
+}
+
+.uploaded-resumes {
+  margin-top: 20px;
+}
+
+.upload-docs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    color: #333333;
+}
+
+.upload-options {
+    display: flex;
+    gap: 20px;
+}
+
+.resume,
+.cover-letter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #548BAB;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.resume:hover,
+.cover-letter:hover {
+    text-decoration: underline;
+}
+
+.resume-upload {
+    position: absolute;
+    height: 80%;
+    top: 60px;
+    left: 20px;
+    width: 30%;
+    padding: 20px;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-progress {
+  width: 0;
+  height: 4px;
+  background-color: #007bff;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  transition: width 0.3s ease; /* Add transition for smooth effect */
+}
+
+
+.resume-name,
+.resume-details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.upload-buttons {
+    gap: 10px;
+}
+
+.uploaded-r{
+  margin-left: 270px;
+}
+
+.dropbox-button,
+.google-drive-button {
+  margin-top: 20px;
+    display: block; /* Change from flex to block */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #548BAB;
+    cursor: pointer;
+    text-align: center; /* Align text to the center */
+    margin-bottom: 10px; /* Add margin to separate the buttons */
+}
+
+.dropbox-button:hover,
+.google-drive-button:hover {
+    background-color: #3C6E91;
+}
+
+.uploadButton{
+  display: flex;
+}
+
 .bott {
   display: flex;
   justify-content: space-between;
+  margin-top: 100%;
 }
 
 .bott1 {
