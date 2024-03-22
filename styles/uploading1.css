@@ -70,9 +70,8 @@ nav {
 /* -------job listing-------- */
 
 .job-listing {
-  width: 100%;
-  max-width: 497px;
-  height: 89vh; 
+  width: 100vh;
+  height: 100%; 
   margin: 2px 0 0;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -312,8 +311,8 @@ margin-top: 44px;
   .container11 {
     position: relative;
     width: 862px;
-    height: 100%;
-    margin: 50px auto;
+    height: 70vh;
+    margin-left: 50px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.06);
@@ -362,7 +361,23 @@ margin-top: 44px;
 
 .uploaded-resumes {
   margin-top: 20px;
+  margin-left: 270px;
+  }
+
+  .uploaded-resumes {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    margin-top: 10px;
+    display: none; /* Hide by default */
 }
+
+.uploaded-resumes p {
+    margin: 0;
+    padding: 5px;
+}
+
+
 
 .upload-docs {
     font-family: 'Montserrat', sans-serif;
@@ -396,7 +411,6 @@ margin-top: 44px;
 
 .resume-upload {
     position: absolute;
-    height: 80%;
     top: 60px;
     left: 20px;
     width: 30%;
@@ -427,8 +441,37 @@ margin-top: 44px;
     gap: 10px;
 }
 
-.uploaded-r{
-  margin-left: 270px;
+.p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.p1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 20px;
+  margin-left: 375px;
+}
+
+.apply{
+  width: 200px;
+  height: 60px;
+  gap: 0px;
+  border-radius: 50px;
+  border: none;
+  opacity: 0px;
+  background-color: #548BAB;
+  color: white;
+  margin-left: 400px;
+  margin-top: 20px;
 }
 
 .dropbox-button,
@@ -441,8 +484,9 @@ margin-top: 44px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: #FFFFFF;
-    background-color: #548BAB;
+    color: black;
+    border: 0.5px solid black;
+    background-color: transparent;
     cursor: pointer;
     text-align: center; /* Align text to the center */
     margin-bottom: 10px; /* Add margin to separate the buttons */

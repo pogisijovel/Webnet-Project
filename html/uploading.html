@@ -16,8 +16,6 @@
 
 </head>
 
-
-  <body>
     <header>
       <nav>
         <div class = "logo">
@@ -108,34 +106,57 @@
           </div>
   
           <div class="container11">
-            <div class="header">
-                <p class="upload-docs">Upload documents</p>
-                <div class="upload-options">
-                    <p class="resume">Resume</p>
-                    <p class="cover-letter">Cover letter</p>
+                <div class="header">
+                    <p class="upload-docs">Upload documents</p>
+                        <div class="upload-options">
+                            <p class="resume" onclick="showUploaded('resume')">Resume</p>
+                            <p class="cover-letter" onclick="showUploaded('cover-letter')">Cover letter</p>
+                        </div>
+                        
                 </div>
-            </div>
-        
-            <div class="upload-section">
-                <div class="resume-upload" id="resume-upload">
-                    <div class="upload-progress">
-                        <div class="resume-progress" id="resume-progress"></div>
-                        <div class="loading" id="loading"></div>
-                        <div class="upload-text">Drag and drop files here or Click to upload</div>
+                <div class="upload-section">
+                    <div class="resume-upload" id="resume-upload">
+                        <div class="upload-progress">
+                            <div class="resume-progress" id="resume-progress"></div>
+                            <div class="loading" id="loading"></div>
+                            <div class="upload-text">Drag and drop files here or Click to upload</div>
+                        </div>
+    
+                            <div class="upload-buttons">
+                                <label for="file-upload" class="dropbox-button">
+                                    <img src="/pictures/dropbox.svg" alt="Dropbox">
+                                    Upload via Dropbox
+                                </label>
+                                <a href="https://drive.google.com/" class="google-drive-button">
+                                    <img src="/pictures/gdrive.svg" alt="Google Drive">
+                                    Upload via Google Drive
+                                </a>
+                            </div>
+                        <input type="file" id="file-upload" accept=".docx" style="display: none;">
                     </div>
+
         
-                    <div class="upload-buttons">
-                        <label for="file-upload" class="dropbox-button">Upload via Dropbox</label>
-                        <a href="https://drive.google.com/" class="google-drive-button" target="_blank">Upload via Google Drive</a>
-                    </div>
-                    <input type="file" id="file-upload" accept=".docx" style="display: none;">
+                <div class="uploaded-resumes" id="uploaded-resume" style="display: none;">
+                    <p class="uploaded-r">UPLOADED RESUME</p>
                 </div>
-        
-                <div class="uploaded-resumes">
-                    <p class="uploaded-r">UPLOADED RESUMES</p>
+                <div class="uploaded-resumes" id="uploaded-cover-letter" style="display: none;">
+                    <p class="uploaded-r">UPLOADED COVER LETTER</p>
                 </div>
+                
             </div>
         </div>
+        <p class="p">
+            By continuing with the application, you agree to our 
+        </p>
+        <p class="p1">
+            Terms of Use and Privacy Policy
+        </p>
+
+        <button class="apply">Apply for job</button>
+    </div>
+    
+</div>
+
         
     
     <!-- footer -->
@@ -145,83 +166,238 @@
     </div>
 
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const fileInput = document.getElementById('file-upload');
-    const dropboxButton = document.querySelector('.dropbox-button');
-    const googleDriveButton = document.querySelector('.google-drive-button');
-    const uploadText = document.querySelector('.upload-text');
-    const loading = document.getElementById('loading');
+    document.addEventListener("DOMContentLoaded", function() {
+        const fileInput = document.getElementById('file-upload');
+        const dropboxButton = document.querySelector('.dropbox-button');
+        const googleDriveButton = document.querySelector('.google-drive-button');
+        const uploadText = document.querySelector('.upload-text');
+        const loading = document.getElementById('loading');
 
-    // Trigger file input click event when drag and drop area is clicked
-    document.getElementById('resume-upload').addEventListener('click', function() {
-        fileInput.click();
+        // Trigger file input click event when drag and drop area is clicked
+        document.getElementById('resume-upload').addEventListener('click', function() {
+            fileInput.click();
+        });
+
+        // Open Dropbox website when Dropbox button is clicked
+        dropboxButton.addEventListener('click', function() {
+            window.open('https://www.dropbox.com/', '_blank');
+        });
+
+        // Open Google Drive website when Google Drive button is clicked
+        googleDriveButton.addEventListener('click', function() {
+            window.open('https://drive.google.com/', '_blank');
+        });
+
+        // Update upload text when file is selected
+        fileInput.addEventListener('change', function() {
+            if (fileInput.files.length > 0) {
+                const fileName = fileInput.files[0].name;
+                uploadText.textContent = `${fileName} is uploading`;
+
+                // Show loading spinner
+                loading.style.display = 'block';
+
+                // Create a new FormData object
+                const formData = new FormData();
+                formData.append('file', fileInput.files[0]);
+
+                // Create a new XMLHttpRequest object
+                const xhr = new XMLHttpRequest();
+
+                // Set up the request
+                xhr.open('POST', 'upload.php', true);
+
+                // Set up the progress event listener
+                xhr.upload.addEventListener('progress', function(event) {
+                    if (event.lengthComputable) {
+                        const percent = (event.loaded / event.total) * 100;
+                        const progressBar = document.querySelector('.resume-progress');
+                        progressBar.style.width = percent + '%';
+                    }
+                });
+
+                // Set up the load event listener
+                xhr.addEventListener('load', function() {
+                    // Hide loading spinner
+                    loading.style.display = 'none';
+                    uploadText.textContent = `${fileName} is uploaded`;
+
+                    // Display the uploaded file in the respective section
+                    const uploadedFileName = document.createElement('p');
+                    uploadedFileName.textContent = fileName;
+                    if (fileName.toLowerCase().includes('resume')) {
+                        document.getElementById('uploaded-resume').appendChild(uploadedFileName);
+                    } else if (fileName.toLowerCase().includes('cover letter')) {
+                        document.getElementById('uploaded-cover-letter').appendChild(uploadedFileName);
+                    }
+                });
+
+                // Send the request
+                xhr.send(formData);
+            } else {
+                uploadText.textContent = 'Drag and drop files here or Click to upload';
+            }
+        });
     });
 
-    // Open Dropbox website when Dropbox button is clicked
-    dropboxButton.addEventListener('click', function() {
-        window.open('https://www.dropbox.com/', '_blank');
-    });
+    function showUploaded(type) {
+        // Hide all uploaded sections
+        document.getElementById('uploaded-resume').style.display = 'none';
+        document.getElementById('uploaded-cover-letter').style.display = 'none';
 
-    // Open Google Drive website when Google Drive button is clicked
-    googleDriveButton.addEventListener('click', function() {
-        window.open('https://drive.google.com/', '_blank');
-    });
+        // Show the uploaded file in the respective section
+        if (type === 'resume') {
+            document.getElementById('uploaded-resume').style.display = 'block';
+        } else if (type === 'cover-letter') {
+            document.getElementById('uploaded-cover-letter').style.display = 'block';
+        }
+    }
 
-    // Update upload text when file is selected
-    fileInput.addEventListener('change', function() {
-        if (fileInput.files.length > 0) {
-            const fileName = fileInput.files[0].name;
-            uploadText.textContent = `${fileName} is uploading`;
+    document.addEventListener("DOMContentLoaded", function() {
+            const fileInput = document.getElementById('file-upload');
+            const uploadText = document.querySelector('.upload-text');
+            const loading = document.getElementById('loading');
 
-            // Show loading spinner
-            loading.style.display = 'block';
+            // Update upload text when file is selected
+            fileInput.addEventListener('change', function() {
+                if (fileInput.files.length > 0) {
+                    const fileName = fileInput.files[0].name;
+                    uploadText.textContent = `${fileName} is uploading`;
 
-            // Create a new FormData object
-            const formData = new FormData();
-            formData.append('file', fileInput.files[0]);
+                    // Show loading spinner
+                    loading.style.display = 'block';
 
-            // Create a new XMLHttpRequest object
-            const xhr = new XMLHttpRequest();
+                    // Create a new FormData object
+                    const formData = new FormData();
+                    formData.append('file', fileInput.files[0]);
 
-            // Set up the request
-            xhr.open('POST', 'upload.php', true);
+                    // Simulate upload process (replace with actual upload logic)
+                    setTimeout(function() {
+                        // Hide loading spinner
+                        loading.style.display = 'none';
+                        uploadText.textContent = `${fileName} is uploaded`;
 
-            // Set up the progress event listener
-            xhr.upload.addEventListener('progress', function(event) {
-                if (event.lengthComputable) {
-                    const percent = (event.loaded / event.total) * 100;
-                    const progressBar = document.querySelector('.resume-progress');
-                    progressBar.style.width = percent + '%';
+                        // Display the uploaded file in the respective section
+                        const uploadedFileName = document.createElement('p');
+                        uploadedFileName.textContent = fileName;
+                        if (fileName.toLowerCase().includes('resume')) {
+                            document.getElementById('uploaded-resume').appendChild(uploadedFileName);
+                        }
+                        if (fileName.toLowerCase().includes('cover letter')) {
+                            document.getElementById('uploaded-cover-letter').appendChild(uploadedFileName);
+                        }
+                    }, 2000); // Simulating 2 seconds upload time
+                } else {
+                    uploadText.textContent = 'Drag and drop files here or Click to upload';
                 }
             });
+        });
 
-            // Set up the load event listener
-            xhr.addEventListener('load', function() {
-                // Hide loading spinner
-                loading.style.display = 'none';
-                uploadText.textContent = `${fileName} is uploaded`;
-            });
+        function showUploaded(type) {
+            // Hide all uploaded sections
+            document.getElementById('uploaded-resume').style.display = 'none';
+            document.getElementById('uploaded-cover-letter').style.display = 'none';
 
-            // Send the request
-            xhr.send(formData);
-        } else {
-            uploadText.textContent = 'Drag and drop files here or Click to upload';
+            // Show the uploaded file in the respective section
+            if (type === 'resume') {
+                document.getElementById('uploaded-resume').style.display = 'block';
+            } else if (type === 'cover-letter') {
+                document.getElementById('uploaded-cover-letter').style.display = 'block';
+            }
         }
-    });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const fileInput = document.getElementById('file-upload');
+            const uploadText = document.querySelector('.upload-text');
+            const loading = document.getElementById('loading');
+
+            // Update upload text when file is selected
+            fileInput.addEventListener('change', function() {
+                if (fileInput.files.length > 0) {
+                    const fileName = fileInput.files[0].name;
+                    uploadText.textContent = `${fileName} is uploading`;
+
+                    // Show loading spinner
+                    loading.style.display = 'block';
+
+                    // Create a new FormData object
+                    const formData = new FormData();
+                    formData.append('file', fileInput.files[0]);
+
+                    // Simulate upload process (replace with actual upload logic)
+                    setTimeout(function() {
+                        // Hide loading spinner
+                        loading.style.display = 'none';
+                        uploadText.textContent = `${fileName} is uploaded`;
+
+                        // Display the uploaded file in the respective section
+                        const uploadedFileName = document.createElement('p');
+                        uploadedFileName.textContent = fileName;
+                        if (fileName.toLowerCase().includes('resume')) {
+                            document.getElementById('uploaded-resume').appendChild(uploadedFileName);
+                        }
+                        if (fileName.toLowerCase().includes('cover letter')) {
+                            document.getElementById('uploaded-cover-letter').appendChild(uploadedFileName);
+                        }
+                    }, 2000); // Simulating 2 seconds upload time
+                } else {
+                    uploadText.textContent = 'Drag and drop files here or Click to upload';
+                }
+            });
+        });
+
+        function showUploaded(type) {
+            // Hide all uploaded sections
+            document.getElementById('uploaded-resume').style.display = 'none';
+            document.getElementById('uploaded-cover-letter').style.display = 'none';
+
+            // Show the uploaded file in the respective section
+            if (type === 'resume') {
+                document.getElementById('uploaded-resume').style.display = 'block';
+            } else if (type === 'cover-letter') {
+                document.getElementById('uploaded-cover-letter').style.display = 'block';
+            }
+        }
+document.querySelector('.apply').addEventListener('click', function() {
+    alert('Application submitted!');
+    // Show the uploaded resume section
+    document.getElementById('uploaded-resume').style.display = 'block';
 });
 
-// Set up the load event listener
-xhr.addEventListener('load', function() {
-    // Hide loading spinner
-    loading.style.display = 'none';
-    uploadText.textContent = `${fileName} is uploaded`;
 
-    // Display the uploaded file in the uploaded-resumes section
-    const uploadedFileName = document.createElement('p');
-    uploadedFileName.textContent = fileName;
-    document.getElementById('uploaded-resumes').appendChild(uploadedFileName);
+fileInput.addEventListener('change', function() {
+    if (fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name;
+        uploadText.textContent = `${fileName} is uploading`;
+
+        // Show loading spinner
+        loading.style.display = 'block';
+
+        // Create a new FormData object
+        const formData = new FormData();
+        formData.append('file', fileInput.files[0]);
+
+        // Simulate upload process (replace with actual upload logic)
+        setTimeout(function() {
+            // Hide loading spinner
+            loading.style.display = 'none';
+            uploadText.textContent = `${fileName} is uploaded`;
+
+            // Display the uploaded file in the respective section
+            const uploadedFileName = document.createElement('p');
+            uploadedFileName.textContent = fileName;
+            if (fileName.toLowerCase().includes('resume')) {
+                document.getElementById('uploaded-resume').style.display = 'block';
+                document.getElementById('uploaded-resume').appendChild(uploadedFileName);
+            } else if (fileName.toLowerCase().includes('cover letter')) {
+                document.getElementById('uploaded-cover-letter').style.display = 'block';
+                document.getElementById('uploaded-cover-letter').appendChild(uploadedFileName);
+            }
+        }, 2000); // Simulating 2 seconds upload time
+    } else {
+        uploadText.textContent = 'Drag and drop files here or Click to upload';
+    }
 });
-
 
       </script>
   </body>
