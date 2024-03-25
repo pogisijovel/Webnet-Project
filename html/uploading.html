@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
     <header>
@@ -136,10 +135,10 @@
                     </div>
 
         
-                <div class="uploaded-resumes" id="uploaded-resume" style="display: none;">
+                <div class="uploaded-section" id="uploaded-resume" style="display: none;">
                     <p class="uploaded-r">UPLOADED RESUME</p>
                 </div>
-                <div class="uploaded-resumes" id="uploaded-cover-letter" style="display: none;">
+                <div class="uploaded-section" id="uploaded-cover-letter" style="display: none;">
                     <p class="uploaded-r">UPLOADED COVER LETTER</p>
                 </div>
                 
@@ -187,6 +186,8 @@
         googleDriveButton.addEventListener('click', function() {
             window.open('https://drive.google.com/', '_blank');
         });
+
+        // catch data ============================================================================================
 
         // Update upload text when file is selected
         fileInput.addEventListener('change', function() {

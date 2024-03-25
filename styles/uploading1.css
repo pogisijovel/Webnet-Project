@@ -359,12 +359,16 @@ margin-top: 44px;
   font-size: 16px;
 }
 
-.uploaded-resumes {
+.uploaded-section {
   margin-top: 20px;
   margin-left: 270px;
   }
 
-  .uploaded-resumes {
+  .uploaded-section.active {
+    border-bottom: 2px solid blue; 
+}
+
+  .uploaded-section {
     background-color: #f8f9fa;
     padding: 10px;
     border: 1px solid #ced4da;
@@ -372,7 +376,7 @@ margin-top: 44px;
     display: none; /* Hide by default */
 }
 
-.uploaded-resumes p {
+.uploaded-section p {
     margin: 0;
     padding: 5px;
 }
